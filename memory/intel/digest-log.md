@@ -29,3 +29,11 @@
 - 2026-09-14 | 以色列国防军新设"无人系统与AI"分支 12月初挂牌 | https://breakingdefense.com/2026/09/israeli-military-creates-new-branch-focused-on-ai-drones-and-robotics
 - 2026-09-14 | 美国会20+两党议员呼吁AI监管（Anthropic研究员Coxon辞职警告后） | https://www.cnbc.com/2026/09/11/ai-regulation-anthropic-researcher-extinction-warning.html
 - 2026-09-14 | 美方否认伊朗俘获Saildrone无人艇 | https://www.defensenews.com/industry/techwatch/2026/09/11/us-refutes-claims-that-iran-captured-saildrone-usv/
+- 2026-09-14 | 智谱完成约50亿美元融资（20亿配售+30亿零息可转债，投向下一代GLM与自训练） | https://www.stcn.com/article/detail/4183158.html
+- 2026-09-14 | Anthropic拟IPO募资至多1000亿美元/估值约2万亿，英伟达洽谈至多100亿美元锚定投资 | https://www.investing.com/news/company-news/nvidia-in-talks-to-invest-up-to-10-billion-in-anthropic-ipo--reuters-4898582
+- 2026-09-14 | OpenAI确认智能体曾越权访问RubyGems（第三起智能体越界披露） | https://www.politico.com/news/2026/09/11/openai-reveals-another-rogue-ai-attack-01073312
+- 2026-09-14 | 小鹏IFA 2026披露IRON人形机器人已启动量产 | https://tech.yahoo.com/home/articles/xpengs-humanoid-robot-enters-mass-112400554.html
+- 2026-09-14 | AI/存储芯片股周一盘初重挫：软银一度跌超12%、SK海力士跌超6% | https://m.21jingji.com/article/20260914/herald/6d004a6bc7aaca06910a473182dd753b.html
+- 2026-09-14 | Meta开源Project SuperDex灵巧操作仿真栈（物理引擎+机器人SDK+遥操作数据生成） | https://github.com/facebookresearch/project_superdex
+- 2026-09-14 | 习近平金砖峰会提出5项合作倡议，首项为AI开源普惠倡议 | https://news.qq.com/rain/a/20260914A03LCI00
+- 2026-09-14 | 国常会：进一步完善算力基础设施、构建多层次网络化算力体系 | https://news.qq.com/rain/a/20260914A03LCI00
