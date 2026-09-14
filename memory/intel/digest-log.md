@@ -24,3 +24,8 @@
 - 2026-09-14 | NASA+IBM 开源 Lunar Foundation Model 月球科学基础模型 | https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
 - 2026-09-14 | Altman 确认 OpenAI 2026 年不 IPO | https://www.fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/
 - 2026-09-14 | Anthropic 报告：俄开发者用 AI 构建自杀式无人机软件 | https://www.theguardian.com/world/2026/sep/12/ukraine-war-briefing-russian-developers-used-ai-to-build-kamikaze-attack-drone-software-anthropic-says
+- 2026-09-14 | 燧原科技登陆科创板 首日高开188%（上海AI芯片四小龙会师） | https://m.nbd.com.cn/articles/2026-09-11/4578848.html
+- 2026-09-14 | Launch HN：YC S26 Bullet 编码智能体（自称 SWE-bench Verified 95.8%） | https://news.ycombinator.com/item?id=49283063
+- 2026-09-14 | 以色列国防军新设"无人系统与AI"分支 12月初挂牌 | https://breakingdefense.com/2026/09/israeli-military-creates-new-branch-focused-on-ai-drones-and-robotics
+- 2026-09-14 | 美国会20+两党议员呼吁AI监管（Anthropic研究员Coxon辞职警告后） | https://www.cnbc.com/2026/09/11/ai-regulation-anthropic-researcher-extinction-warning.html
+- 2026-09-14 | 美方否认伊朗俘获Saildrone无人艇 | https://www.defensenews.com/industry/techwatch/2026/09/11/us-refutes-claims-that-iran-captured-saildrone-usv/
