@@ -15,3 +15,12 @@
 - 2026-09-14 | 键盘驱动 IDE Rune 以 GPLv3 开源 | https://linuxiac.com/rune-keyboard-driven-ide-is-now-open-source-under-gplv3/
 - 2026-09-14 | Debian 13.7 发布（107 项安全更新+106 项修复） | https://www.debian.org/News/2026/20260912
 - 2026-09-14 | 路透：解放军人形机器人军用化加速 | https://www.dongascience.com/en/news/79824
+- 2026-09-14 | Anthropic 报告点名阿里/月之暗面/智谱/小米/DeepSeek/MiniMax 蒸馏 Claude（近 2 亿次交互） | https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek
+- 2026-09-14 | Meta AI 智能体 Muse 上线 48 小时登美区 App Store 第 2 | https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us
+- 2026-09-14 | 超维动力 Kinetix AI 完成超 5 亿元天使+轮融资（淡马锡祥峰领投） | https://www.bjnews.com.cn/detail/1789095857129798.html
+- 2026-09-14 | Mecka AI 拟获红杉领投新轮、估值近 5 亿美元（机器人训练数据） | https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data
+- 2026-09-14 | 三星 SDS 牵头组建 10 企业 Physical AI 机器人联盟（单源） | https://en.sedaily.com/technology/2026/09/12/samsung-sds-builds-10-company-robot-alliance-for-physical-ai
+- 2026-09-14 | Google 据报组建以色列团队研发机器人 AI 芯片（单源转引） | https://www.turkiyetoday.com/business/google-reportedly-forms-israeli-team-to-build-ai-chips-for-robots-3228043
+- 2026-09-14 | NASA+IBM 开源 Lunar Foundation Model 月球科学基础模型 | https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+- 2026-09-14 | Altman 确认 OpenAI 2026 年不 IPO | https://www.fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/
+- 2026-09-14 | Anthropic 报告：俄开发者用 AI 构建自杀式无人机软件 | https://www.theguardian.com/world/2026/sep/12/ukraine-war-briefing-russian-developers-used-ai-to-build-kamikaze-attack-drone-software-anthropic-says
