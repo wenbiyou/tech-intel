@@ -37,3 +37,13 @@
 - 2026-09-14 | Meta开源Project SuperDex灵巧操作仿真栈（物理引擎+机器人SDK+遥操作数据生成） | https://github.com/facebookresearch/project_superdex
 - 2026-09-14 | 习近平金砖峰会提出5项合作倡议，首项为AI开源普惠倡议 | https://news.qq.com/rain/a/20260914A03LCI00
 - 2026-09-14 | 国常会：进一步完善算力基础设施、构建多层次网络化算力体系 | https://news.qq.com/rain/a/20260914A03LCI00
+- 2026-09-15 | 英伟达/Palantir/Booz Allen 限制内部使用 Anthropic 模型 | https://www.sohu.com/a/1076090006_122014422
+- 2026-09-15 | 宇树发布 G1+ 人形机器人（颈 2 自由度/扭矩 +110%/9.5 万元起） | https://www.thestandard.com.hk/innovation/article/342731/Unitree-launches-upgraded-G1-humanoid-robot
+- 2026-09-15 | Ars 深度：宇树成本控制哲学+美国 7/28 起禁进口外国产整机机器人 | https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/
+- 2026-09-15 | 美股芯片股全线重挫：费半 -5.9%、成份股全跌（AI 降速呼声冲击） | https://finance.eastmoney.com/a/202609153874057734.html
+- 2026-09-15 | iOS 27 正式推送、Siri AI 公测上线（训练用 Gemini，英语/15 Pro 起） | https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here
+- 2026-09-15 | 台积电据报道拟 2028 年底 CoWoS 产能翻倍至约 26 万片/月 | https://rcrtech.com/semiconductor-news/tsmc-double-cowos-capacity-by-2028/
+- 2026-09-15 | NVIDIA 扩展开源 CUDA-Q 平台（CUDA-Q Logical+QUOPS 基准） | https://nvidianews.nvidia.com/news/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing
+- 2026-09-15 | 特朗普 All-In 峰会现场致电黄仁勋：称数据中心反对声是"骗局" | https://www.cnbc.com/2026/09/14/trump-phones-nvidia-huang-all-in-calls-data-center-opposition-hoax.html
+- 2026-09-15 | Anthropic 威胁报告新增细节：中国关联反鱼雷方案/伊朗关联目标建议 | https://www.sandboxx.us/news/anthropic-says-russian-and-chinese-actors-used-claude-as-a-weapons-engineering-assistant-for-drone-swarming-and-more
+- 2026-09-15 | 特斯拉官宣 Cybercab 9 月 17 日起京沪静态展示 | https://www.sohu.com/a/1076090006_122014422
