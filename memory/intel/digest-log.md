@@ -47,3 +47,9 @@
 - 2026-09-15 | 特朗普 All-In 峰会现场致电黄仁勋：称数据中心反对声是"骗局" | https://www.cnbc.com/2026/09/14/trump-phones-nvidia-huang-all-in-calls-data-center-opposition-hoax.html
 - 2026-09-15 | Anthropic 威胁报告新增细节：中国关联反鱼雷方案/伊朗关联目标建议 | https://www.sandboxx.us/news/anthropic-says-russian-and-chinese-actors-used-claude-as-a-weapons-engineering-assistant-for-drone-swarming-and-more
 - 2026-09-15 | 特斯拉官宣 Cybercab 9 月 17 日起京沪静态展示 | https://www.sohu.com/a/1076090006_122014422
+- 2026-09-17 | OpenAI 拟 IPO 前再融资、拟定估值 1.2 万亿美元（FT/Reuters） | https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15
+- 2026-09-17 | 扎克伯格 X 帖反对 AI 联合减速、与 Amodei 降速呼吁正式分裂 | https://www.storyboard18.com/digital/metas-mark-zuckerberg-says-ai-labs-can-prioritise-safety-without-slowdown-110749.htm
+- 2026-09-17 | 智谱上调年末 ARR 指引至 30 亿美元、港股涨超 10% | https://www.163.com/dy/article/L701A3R20530NLC9.html
+- 2026-09-17 | 英特尔 CEO 陈立武：内存价格已涨 5-7 倍、明年短缺更糟 | https://news.sbs.co.kr/english/article.do?news_id=N1008755839
+- 2026-09-17 | GitHub：PR 级 AI Scan 不再要求 CodeQL 默认配置 | https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup
+- 2026-09-17 | OpenAI 确认与 Anthropic/Google DeepMind 协调 AI 安全、称无需反垄断豁免 | https://news.bloomberglaw.com/crypto/openai-says-its-working-with-anthropic-google-on-ai-safety
