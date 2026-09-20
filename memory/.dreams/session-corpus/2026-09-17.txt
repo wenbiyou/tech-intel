@@ -1,0 +1,11 @@
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L20] Assistant: 初步检索到部分线索，但多数结果偏旧。需要更精准地锁定过去 24 小时窗口。继续多轮检索并核实关键页面。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L26] Assistant: 初步锁定几条线索（智谱上调 ARR 指引、OpenAI 传拟 1.2 万亿美元估值 Pre-IPO 融资、扎克伯格反对"减速论"等）。继续核实并扩大检索面。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L32] Assistant: 核心线索已核实多条（FT：OpenAI 拟 1.2 万亿美元估值 Pre-IPO 融资；扎克伯格 9/15 X 帖反对联合减速；智谱上调 ARR 指引）。继续核实芯片/机器人/军事与开源侧。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L38] Assistant: NVIDIA–SK hynix 为 6 月旧闻、机器人运动会为 8 月旧闻，均排除。继续核实：内存涨价原源、Qwen3.6 开源日期、机器人当日动态、政策/军事线。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L44] Assistant: 内存涨价线已获多源确认（陈立武 9/15 圣克拉拉 AI Infrastructure Summit 言论）。再核查：中美 AI 安全对话是否本周开幕、军事科技线、观察名单人物 24h 内动态。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L49] Assistant: 最后补一轮机器人与国内产业当日动态检索，确认机器人类是否真的平淡。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L53] Assistant: 信息已足够。机器人线确认平淡（当日无头部厂商重大动态）。现在检查 insights 目录结构后落档。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L59] Assistant: insights 目录为空，将新建 L3 落档。现在执行三项归档：月度归档追加、去重索引追加（现有索引均在 14 天内，无需修剪）、insights 落档。
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L64] Assistant: 📰 今日前沿科技简报 2026-09-17 【AI/大模型】 - OpenAI 拟在 IPO 前再启一轮私募融资、拟定估值 1.2 万亿美元——FT 报道已与大投资者接触、由投资方主动发起，较 3 月投后 8520 亿美元再度跃升，节奏取决于上市计划（FT/Reuters，9/15 美东） https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-report
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L64] Assistant: 倍、低端手机/笔电内存占物料成本 70-80%；解法押注 CPU+GPU+HBM 先进封装（已请回前 SK 海力士 CEO 李石浩主导），并称先进基板供应商全球仅 4 家（AI Infrastructure Summit，9/15 圣克拉拉；SBS 9/16，BigGo/Forklog 多源） https://news.sbs.co.kr/english/article.do?news_id=N1008755839 【开源/开发】 - GitHub 更新：PR 级 AI Scan 安全扫描不再依赖 CodeQL 
+[tech-intel/sessions/tech-intel/44bc9db1-c72f-4023-9920-bc7a36161e37#L64] Assistant: 减速"叙事开始退潮，行业正式分裂为降速派（Amodei/Altman）与市场约束派（Meta/英伟达/华盛顿）。三个直接推论：①上周砸崩费半的"降速恐慌"缺乏行业共识支撑，前沿供给节奏大概率维持高速，但单家实验室因安全停售的尾部风险仍在（OpenAI 暂停 Pro 的前例），多模型冗余与降级预案仍是刚需；②监管火力将转向智能体行为与用途管控（本周多起智能体越权披露+三方安全协调是明确信号），Agent 产品的权限边界与审计留痕应提前对齐；③独立第三方评估正成行业标配，evals/安全审计是值得关注的新服务位。
