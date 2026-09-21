@@ -53,3 +53,15 @@
 - 2026-09-17 | 英特尔 CEO 陈立武：内存价格已涨 5-7 倍、明年短缺更糟 | https://news.sbs.co.kr/english/article.do?news_id=N1008755839
 - 2026-09-17 | GitHub：PR 级 AI Scan 不再要求 CodeQL 默认配置 | https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup
 - 2026-09-17 | OpenAI 确认与 Anthropic/Google DeepMind 协调 AI 安全、称无需反垄断豁免 | https://news.bloomberglaw.com/crypto/openai-says-its-working-with-anthropic-google-on-ai-safety
+- 2026-09-21 | Anthropic 官宣 Claude 主导 26% 自家模型研发（90% 协作、约 3 万智能体） | https://abcnews.com/US/wireStory/anthropic-model-claude-helping-build-version-136547096
+- 2026-09-21 | Spirit AI 高阳：机器人"大脑"最快 2027 年中迎 GPT-3 时刻、进家庭还需 8 年 | https://www.ksl.com/article/51625634/founder-of-chinese-startup-spirit-ai-says-robot-brains-set-for-2027-breakthrough
+- 2026-09-21 | 黄仁勋苏格兰 AI 峰会：明年芯片销量将翻倍、反对全行业降速 | https://www.chosun.com/english/industry-en/2026/09/18/CTJL52GHLVHZBCMI7MZS6QJNGE/
+- 2026-09-21 | Plugin4Shell：四大编码智能体插件零点击 RCE（Claude Code/Codex 已修、Gemini CLI 弃修） | https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335
+- 2026-09-21 | Claude Code 2.1.277 原生支持 AGENTS.md 回退（采纳开放规范） | https://github.com/anthropics/claude-code/tree/main/mods/agents-md
+- 2026-09-21 | npm 上线 stage-only 令牌（须 2FA 审批才发布） | https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation
+- 2026-09-21 | Bloomberg 调查：过时情报+Maven AI 链与伊朗小学误击（123 名儿童遇难） | https://www.bloomberg.com/graphics/2026-iran-school-attack
+- 2026-09-21 | 阶跃星辰 Step 5 Preview 官宣（600B MoE/1M 上下文，10/15 开源权重） | https://m.163.com/tech/article/L78VD8I600098IEO.html
+- 2026-09-21 | Reuters：Anthropic 权衡 IPO 前推新模型对抗 GPT-6 Astra | https://www.livemint.com/ai/anthropic-mulls-new-ai-model-ahead-of-ipo-to-counter-openais-gpt-6-astra-says-report-what-we-know-11789809806477.html
+- 2026-09-21 | 长鑫存储 CXMT 宣布 G5 DRAM 平台量产（11.95nm 半间距、LPDDR5X 上机） | https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html
+- 2026-09-21 | 特朗普宣布组建"AI Force"并任命 AI 沙皇 | https://www.cnn.com/2026/09/19/politics/trump-ai-task-force-czar
+- 2026-09-21 | 反垄断诉讼指控 Anthropic/OpenAI/SpaceXAI/Google 协调"AI 降速" | https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b
