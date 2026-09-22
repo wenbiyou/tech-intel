@@ -65,3 +65,10 @@
 - 2026-09-21 | 长鑫存储 CXMT 宣布 G5 DRAM 平台量产（11.95nm 半间距、LPDDR5X 上机） | https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html
 - 2026-09-21 | 特朗普宣布组建"AI Force"并任命 AI 沙皇 | https://www.cnn.com/2026/09/19/politics/trump-ai-task-force-czar
 - 2026-09-21 | 反垄断诉讼指控 Anthropic/OpenAI/SpaceXAI/Google 协调"AI 降速" | https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b
+- 2026-09-22 | xAI 正式发布 Grok 4.7（$2/$6 定价、同日上线 GitHub Copilot） | https://x.ai/news/grok-4-7
+- 2026-09-22 | Anthropic 年化收入据报奔 1000 亿美元、IPO 推迟至 11 月 | https://finance.yahoo.com/technology/ai/articles/anthropic-tops-100-billion-revenue-224001996.html
+- 2026-09-22 | 路透：中国监管实质冻结人形机器人 IPO（宇树自峰值腰斩） | https://www.zaobao.com.sg/news/china/story20260921-9708926
+- 2026-09-22 | 三星据报 2027 年 HBM4 产能至少翻倍（HBM 投片 18→25 万片/月） | https://www.digitimes.com/news/a20260921VL206/samsung-2027-hbm4-production-hbm.html
+- 2026-09-22 | OpenAI 呼吁美国主导全球 AI 技术标准、参与 Linux Foundation Appia Foundation | https://www.reuters.com/legal/government/openai-calls-us-take-lead-global-efforts-develop-technical-standards-2026-09-21
+- 2026-09-22 | GitHub 9/21 更新：Grok 4.7 进 Copilot、Enterprise 凭据清单导出 | https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/
+- 2026-09-22 | 美拟与中建立 AI 事件通报机制（贝森特×何立峰纽约会谈、设 AI 对话工作组） | https://apnews.com/article/bessent-ai-xi-trump-china-trade-2c7f54f07e755f506d9db9b91df282bd
