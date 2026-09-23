@@ -72,3 +72,13 @@
 - 2026-09-22 | OpenAI 呼吁美国主导全球 AI 技术标准、参与 Linux Foundation Appia Foundation | https://www.reuters.com/legal/government/openai-calls-us-take-lead-global-efforts-develop-technical-standards-2026-09-21
 - 2026-09-22 | GitHub 9/21 更新：Grok 4.7 进 Copilot、Enterprise 凭据清单导出 | https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/
 - 2026-09-22 | 美拟与中建立 AI 事件通报机制（贝森特×何立峰纽约会谈、设 AI 对话工作组） | https://apnews.com/article/bessent-ai-xi-trump-china-trade-2c7f54f07e755f506d9db9b91df282bd
+- 2026-09-23 | OpenAI 发布 GPT-6 Sol/Luna（价格砍半、同日上线 Copilot） | https://www.theverge.com/ai-artificial-intelligence/998997/openai-launches-faster-and-more-efficient-gpt-6-sol-and-luna-models
+- 2026-09-23 | Anthropic 发布 Claude Opus 5.5（对标 Fable 5.1、成本 -40%） | https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity
+- 2026-09-23 | Meta Muse 零日漏洞披露后约 24 小时热修复（本地劫持+iOS 远程） | https://gizmodo.com/meta-just-patched-a-major-zero-day-vulnerability-in-its-muse-ai-assistant-2000815429
+- 2026-09-23 | 特斯拉中国供应链审厂推进 Optimus 量产（2026 年约 5 万台计划） | https://cnevpost.com/2026/09/21/tesla-audits-china-suppliers-optimus-mass-production/
+- 2026-09-23 | 费半 +4.3%（8 月以来最大单日涨幅，Meta Muse 重振 AI 行情） | https://www.thehindubusinessline.com/markets/ai-trade-roars-back-as-metas-personal-agent-fuels-optimism/article71494034.ece
+- 2026-09-23 | Googlebook $899 开启预售（Android+Gemini 新品类笔记本） | https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/
+- 2026-09-23 | GitHub Copilot 同日接入 Claude Opus 5.5 与 GPT-6 Sol/Luna（Opus 5.5 输出带水印） | https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/
+- 2026-09-23 | GLM-5.3 753B 开源权重上线 Hugging Face（单源） | https://huggingface.co/zai-org/GLM-5.3
+- 2026-09-23 | 特朗普联大宣布 AI 更名 "Super Intelligence" | https://www.bbc.com/news/videos/c8n5d9x10v14o
+- 2026-09-23 | 德州暂停数据中心环保许可审批 | https://www.theverge.com/ai-artificial-intelligence/998986/texas-puts-data-center-permits-on-hold
