@@ -82,3 +82,12 @@
 - 2026-09-23 | GLM-5.3 753B 开源权重上线 Hugging Face（单源） | https://huggingface.co/zai-org/GLM-5.3
 - 2026-09-23 | 特朗普联大宣布 AI 更名 "Super Intelligence" | https://www.bbc.com/news/videos/c8n5d9x10v14o
 - 2026-09-23 | 德州暂停数据中心环保许可审批 | https://www.theverge.com/ai-artificial-intelligence/998986/texas-puts-data-center-permits-on-hold
+- 2026-09-24 | 阿里云栖大会：千问将训练 5-10 万亿参数模型、真武 V900 发布、2032 年 20GW 目标 | https://ali-home.alibaba.com/document-2039431633571938304
+- 2026-09-24 | Agility 发布第五代人形机器人 Digit 5（首个“协作安全”人形机器人） | https://tech.yahoo.com/science/articles/agility-debuts-first-cooperatively-safe-124000066.html
+- 2026-09-24 | 台积电据报道拟 2027 年 1 月起代工涨价 3%-6% | https://m.sohu.com/a/1080183928_130887
+- 2026-09-24 | 马斯克：中国 2-3 年内可凭光刻与芯片制造补齐算力缺口 | https://finance.sina.com.cn/roll/2026-09-23/doc-inisuxhf5284198.shtml
+- 2026-09-24 | GitHub Copilot app 本地沙箱 GA | https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app
+- 2026-09-24 | GitHub Actions Node 20 正式退场（runner 转 Node 24） | https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions
+- 2026-09-24 | Altman/Amodei 向联合国安理会通报 AI 风险、呼吁国际协调 | https://www.reuters.com/business/ai-leaders-brief-un-amid-warnings-technology-could-slip-beyond-human-control-2026-09-23
+- 2026-09-24 | Tekever 完成 5.8 亿美元 D 轮首关、估值 64 亿美元 | https://www.reuters.com/business/ai-drone-maker-tekever-valued-64-billion-after-580-million-funding-round-2026-09-23
+- 2026-09-24 | 加州组建专家组推进 AI"kill switch"落地 | https://www.gov.ca.gov/2026/09/23/governor-newsom-announces-world-leading-experts-to-deliver-on-his-ai-executive-order-including-advancing-creation-of-a-kill-switch

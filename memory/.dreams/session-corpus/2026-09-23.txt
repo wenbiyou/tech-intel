@@ -1,0 +1,10 @@
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L17] Assistant: 首轮检索噪音较大，继续做多轮定向检索。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L22] Assistant: 检索到 GitHub 9/22 两条重要更新线索（Claude Opus 5.5 与 OpenAI GPT-6 Sol/Luna 上线 Copilot），继续核实并扩大搜索面。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L27] Assistant: 核心线索已确认：9/22 OpenAI 与 Anthropic 相隔约一小时先后发布 GPT-6 Sol/Luna 与 Claude Opus 5.5。继续补齐人物名单、机器人、安全与政策线。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L32] Assistant: 继续核实关键条目：特朗普言论、GitHub 9/22 更新原文链接、机器人与军事线。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L37] Assistant: 最后补几个精确链接与开源侧动态核实。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L42] Assistant: 重要新线索：英伟达确认以约 130 亿美元收购 Hugging Face、GLM-5.3 权重已上 HF。逐一核实后成稿。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L47] Assistant: 三条新线索核实完毕：英伟达收购 HF 与 OpenAI–Cursor 均为 8 月底/9 月初旧闻（不入选）；GLM-5.3 权重上线为 9/21-22 新动态（单源标注）。现在成稿并静默归档。
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L50] Assistant: 📰 今日前沿科技简报 2026-09-23 【AI/大模型】OpenAI 正式发布 GPT-6 Sol 与 GPT-6 Luna——继承 GPT-6 Astra 能力、价格砍半、用量上限更高，Plus 及以上档可在 ChatGPT Work/Codex 使用，免费档仅 Luna，同日上线 GitHub Copilot（The Verge） https://www.theverge.com/ai-artificial-intelligence/998997/openai-launches-faster-and-m
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L50] Assistant: 量产临近：中国供应链新一轮审厂推进——多家供应商已锁定订单，2026 年计划约 5 万台、德州第二产线规划中（澎湃/CnEVPost 9/21，SCMP·Bloomberg 9/18 起多源跟进） https://cnevpost.com/2026/09/21/tesla-audits-china-suppliers-optimus-mass-production/ 【科技行业】AI 行情强势反弹——费半周一收涨 4.3%（8 月以来最大单日涨幅），Meta Muse 登顶免费榜重振需求叙事，三星/SK 海力士 
+[tech-intel/sessions/tech-intel/e5693630-c3c0-408a-a326-7a434dc10c96#L50] Assistant: https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/ 【开源/开发】智谱 GLM-5.3 753B 开源权重上线 Hugging Face——兑现"发布两周后开放权重"承诺（BF16/F8_E4M3；单源转引） https://huggingface.co/zai-org/GLM-5.3 【军事/政策/商业】特朗普联大宣布 AI 正式更名 "Super Intelligence（SI
