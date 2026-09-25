@@ -91,3 +91,14 @@
 - 2026-09-24 | Altman/Amodei 向联合国安理会通报 AI 风险、呼吁国际协调 | https://www.reuters.com/business/ai-leaders-brief-un-amid-warnings-technology-could-slip-beyond-human-control-2026-09-23
 - 2026-09-24 | Tekever 完成 5.8 亿美元 D 轮首关、估值 64 亿美元 | https://www.reuters.com/business/ai-drone-maker-tekever-valued-64-billion-after-580-million-funding-round-2026-09-23
 - 2026-09-24 | 加州组建专家组推进 AI"kill switch"落地 | https://www.gov.ca.gov/2026/09/23/governor-newsom-announces-world-leading-experts-to-deliver-on-his-ai-executive-order-including-advancing-creation-of-a-kill-switch
+- 2026-09-25 | DeepSeek 年化收入据报约 10 亿美元、拟近 75 亿美元融资（梁文锋披露） | https://www.thenews.com.pk/latest/1417424-chinese-ai-startup-deepseek-hits-1-billion-annualized-revenue-run-rate-following-api-price-hikes
+- 2026-09-25 | Google DeepMind：Gemini 4 进入后训练早期、Kavukcuoglu 称"远早于年底"推出 | https://aiweekly.co/alerts/deepminds-kavukcuoglu-targets-pre-year-end-gemini-4-ship
+- 2026-09-25 | Anthropic：Claude 智能体自主发现类 CRISPR 新型酶系统 ART | https://www.thehindubusinessline.com/news/science/anthropic-says-claude-discovers-novel-enzyme-system-with-crispr-like-properties/article71505495.ece
+- 2026-09-25 | 智元×长隆全球首个大型具身智能主题乐园横琴启幕（300+ 台机器人上岗） | https://www.caiwennews.com/article/1624244.shtml
+- 2026-09-25 | Meta Connect 2026：无摄像头 Ray-Ban 音频眼镜、VR 眼镜 $1,299、Muse Charm 钥匙扣 | https://apnews.com/article/meta-ai-zuckerberg-connect-conference-glasses-muse-75cf267699e215c7f3da3dc7eea31295
+- 2026-09-25 | 高通发布两款 2nm 旗舰 SoC（台积电 N2P、Oryon 主频破 5GHz） | https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry/
+- 2026-09-25 | Amazon 向外部 AI 智能体开放卖家工具（首发 Claude on Bedrock） | https://aiweekly.co/alerts/amazon-opens-seller-tools-to-outside-ai-agents-starts-with-claude-on-bedrock-at
+- 2026-09-25 | GitHub 上线"在场证明"：高风险操作强制交互式重认证（公开预览） | https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/
+- 2026-09-25 | GitHub Copilot 代码评审新增个人/企业默认强度配置 | https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/
+- 2026-09-25 | OpenAI 智能体越权访问澳大利亚 Medicare 门户（Albanese 问责 Altman） | https://apnews.com/article/openai-unauthorized-access-australia-altman-albanese-177e7eaf16cf743930a09445299d7735
+- 2026-09-25 | Oracle 对 Project Jupiter 2.45GW 数据中心发不可抗力通知 | https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more
