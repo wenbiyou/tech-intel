@@ -32,8 +32,10 @@
 ## 档案（L1/L2/L3 分层）
 
 - **L1 流水** `memory/intel/daily/YYYY-MM.md`：简报正文按月落档；每日标题行 `## MM-DD 周X` + 条目列表
+- **L1 结构化层** `memory/intel/daily/YYYY-MM.jsonl`：与 md 同步的结构化条目（digest 出稿时按任务书第③步写入；历史由生成器回填/校准，可随时从 md 重建）——情报大屏数据源
 - **L2 索引** `memory/intel/digest-log.md`：去重索引，滚动 14 天，追加时修剪超窗（只删索引行，不动 L1）
 - **L3 资产** `memory/intel/insights/`：⭐ 条目摘录、按需专题结论、月度趋势小结（`YYYY-MM-trends.md`）
 - `memory/intel/source-notes.md`：源清单与观察名单（活文档，改一处即生效，次日简报自动应用）
 - **按需情报落档**：默认不落档（任务书只读派发）；用户认可复用或派发方明确要求时，由任务书显式指定落 L3
 - 归档纪律：只追加不回改历史；只存公开来源摘要/链接，不全文转载（版权合规）；与前端架构师主记忆库物理隔离
+- 情报大屏：`memory/intel/dashboard/`（生成器 `tools/gen-intel-dashboard.mjs`；静态服务 `tools/serve-dashboard.mjs` 端口 8737，MacBook 经 tailscale serve 访问）。服务启动必须用 exec background + timeoutSeconds=0（普通 background 有 ~30min overall-timeout 会被回收）；portal 绑 gateway 生命周期不持久，重启后重挂；tailscale serve 规则存 tailscaled state，gateway 重启不受影响。数据更新一律跑生成器重建（生成器只产 data/*.json 与 jsonl；index.html 已存在则不覆盖）。index.html 为设计资产（2026-09-27 ui-designer 重设计版，双主题 token 体系；旧版备份 index-backup-v1.html），改版走 ui-designer 分派，禁手改其他 dashboard/ 文件

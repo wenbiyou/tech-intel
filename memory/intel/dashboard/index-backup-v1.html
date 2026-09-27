@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技情报大屏 · tech-intel</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--card2:#1d212b;--border:#2a2f3a;--text:#e2e6ee;--muted:#8b93a5;--accent:#4f8cff;--star:#f5b544;--ai:#4f8cff;--robot:#3ecf8e;--industry:#c084fc;--dev:#38bdf8;--milpol:#f87171;--other:#8b93a5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:24px;max-width:1080px;margin:0 auto}
+h1{font-size:20px;margin-bottom:4px}
+.sub{color:var(--muted);font-size:12px;margin-bottom:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.stat .v{font-size:24px;font-weight:700}
+.stat .k{color:var(--muted);font-size:12px;margin-top:2px}
+.catbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;align-items:center}
+.chip{border:1px solid var(--border);background:var(--card);color:var(--muted);border-radius:999px;padding:4px 12px;font-size:12px;cursor:pointer;user-select:none}
+.chip.on{color:var(--text);border-color:var(--accent);background:rgba(79,140,255,.12)}
+.chip .n{opacity:.7;margin-left:4px}
+.day{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.day-h{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer}
+.day-h:hover{background:var(--card2)}
+.day-h .d{font-weight:700;min-width:150px}
+.day-h .w{color:var(--muted);font-size:12px}
+.day-h .cnt{color:var(--muted);font-size:12px;margin-left:auto}
+.day-h .arrow{color:var(--muted);transition:transform .15s}
+.day.open .arrow{transform:rotate(90deg)}
+.day-b{display:none;padding:4px 16px 14px;border-top:1px solid var(--border)}
+.day.open .day-b{display:block}
+.entry{padding:8px 0;border-bottom:1px dashed var(--border)}
+.entry:last-child{border-bottom:none}
+.entry .t{font-weight:600}
+.entry .s{color:var(--muted);font-size:13px;margin-top:2px}
+.entry a{color:var(--accent);text-decoration:none;font-size:12px}
+.entry a:hover{text-decoration:underline}
+.tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 7px;margin-right:8px;vertical-align:1px;background:rgba(255,255,255,.06);color:var(--muted)}
+.tag.ai{color:var(--ai)} .tag.robot{color:var(--robot)} .tag.industry{color:var(--industry)} .tag.dev{color:var(--dev)} .tag.milpol{color:var(--milpol)}
+.focus{margin-top:10px;background:rgba(245,181,68,.08);border:1px solid rgba(245,181,68,.25);border-radius:8px;padding:10px 12px;font-size:13px}
+.focus b{color:var(--star)}
+.insights{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:18px}
+.insights h2{font-size:14px;margin-bottom:8px}
+.insights li{margin:4px 0 4px 18px;color:var(--muted);font-size:13px}
+.loading,.empty{color:var(--muted);text-align:center;padding:40px 0}
+</style>
+</head>
+<body>
+<h1>🛰️ 科技情报大屏</h1>
+<div class="sub" id="gen-at">加载中…</div>
+<div class="stats" id="stats"></div>
+<div class="catbar" id="catbar"></div>
+<div id="list"><div class="loading">加载中…</div></div>
+<script>
+let IDX=null, MONTH_CACHE={}, activeCat=null;
+const CAT_LABEL={"ai":"AI/大模型","robot":"机器人","industry":"科技行业","dev":"开源/开发","milpol":"军事/政策/商业","other":"其他"};
+const CAT_ORDER=['ai','robot','industry','dev','milpol','other'];
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+async function j(url){const r=await fetch(url);if(!r.ok)throw new Error(url);return r.json()}
+async function loadMonth(m){if(!MONTH_CACHE[m])MONTH_CACHE[m]=await j('data/monthly/'+m+'.json');return MONTH_CACHE[m]}
+async function loadAllMonths(){for(const m of IDX.months)await loadMonth(m)}
+function renderStats(){
+  const t=IDX.totals;
+  document.getElementById('gen-at').textContent='生成于 '+new Date(IDX.generatedAt).toLocaleString('zh-CN',{hour12:false})+' · 数据源 tech-intel/memory/intel';
+  document.getElementById('stats').innerHTML=[
+    ['情报总条数',t.entries],['覆盖天数',t.days],['近7天',t.last7],['近30天',t.last30],['⭐ 重点点评',t.focus],['专题报告',t.insights]
+  ].map(([k,v])=>'<div class="stat"><div class="v">'+v+'</div><div class="k">'+k+'</div></div>').join('');
+  const bars=CAT_ORDER.filter(c=>IDX.byCategory[c]).map(c=>{
+    const n=IDX.byCategory[c],pct=Math.round(n/t.entries*100);
+    return '<span class="chip" data-cat="'+c+'">'+CAT_LABEL[c]+'<span class="n">'+n+' · '+pct+'%</span></span>';
+  }).join('');
+  document.getElementById('catbar').innerHTML='<span style="color:var(--muted);font-size:12px;margin-right:4px">分类筛选</span>'+bars;
+  document.getElementById('catbar').querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>toggleCat(ch.dataset.cat));
+}
+function toggleCat(c){
+  activeCat=(activeCat===c)?null:c;
+  document.getElementById('catbar').querySelectorAll('.chip').forEach(ch=>ch.classList.toggle('on',ch.dataset.cat===activeCat));
+  renderList();
+}
+function entryHtml(e){
+  if(activeCat&&e.category!==activeCat)return '';
+  return '<div class="entry"><span class="tag '+e.category+'">'+(CAT_LABEL[e.category]||e.category)+'</span>'
+    +'<span class="t">'+esc(e.title)+'</span>'
+    +(e.summary?'<div class="s">'+esc(e.summary)+'</div>':'')
+    +'<a href="'+esc(e.url)+'" target="_blank" rel="noopener noreferrer">'+esc(shortUrl(e.url))+' ↗</a></div>';
+}
+function shortUrl(u){try{const x=new URL(u);return x.hostname.replace(/^www./,'')}catch{return u}}
+async function renderList(){
+  const el=document.getElementById('list');
+  if(activeCat){ await loadAllMonths(); }
+  const months=activeCat?IDX.months:[IDX.months[IDX.months.length-1]].filter(Boolean);
+  let html='';
+  for(const m of months){
+    const data=await loadMonth(m);
+    for(const d of data.days){
+      if(activeCat && !d.entries.some(e=>e.category===activeCat))continue;
+      const entries=d.entries.map(entryHtml).join('');
+      html+='<div class="day" data-date="'+d.date+'"><div class="day-h">'
+        +'<span class="d">'+d.date.slice(5)+' <span class="w">'+esc(d.weekday)+'</span></span>'
+        +(d.issue>1?'<span class="w">增刊×'+d.issue+'</span>':'')
+        +(d.hasFocus?'<span style="color:var(--star);font-size:12px">⭐</span>':'')
+        +'<span class="cnt">'+d.entries.length+' 条</span><span class="arrow">▶</span></div>'
+        +'<div class="day-b">'+entries
+        +(d.focus?'<div class="focus"><b>⭐ 值得关注</b>　'+esc(d.focus)+'</div>':'')
+        +'</div></div>';
+    }
+  }
+  el.innerHTML=html||'<div class="empty">无匹配条目</div>';
+  el.querySelectorAll('.day-h').forEach(h=>h.onclick=()=>h.parentElement.classList.toggle('open'));
+}
+function renderInsights(){
+  if(!IDX.insights.length)return;
+  const box=document.createElement('div');box.className='insights';
+  box.innerHTML='<h2>📂 专题报告（L3 资产）</h2><ul>'+IDX.insights.map(i=>'<li>'+esc(i.date)+' · '+esc(i.title)+'（'+Math.round(i.size/1024)+' KB）</li>').join('')+'</ul>';
+  document.getElementById('catbar').after(box);
+}
+(async function(){
+  try{
+    IDX=await j('data/index.json');
+    renderStats();renderInsights();renderList();
+  }catch(e){
+    document.getElementById('list').innerHTML='<div class="empty">数据加载失败：'+esc(e.message)+'（请先运行 gen-intel-dashboard.mjs）</div>';
+  }
+})();
+</script>
+</body>
+</html>
