@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技情报大屏 · tech-intel</title>
+<style>
+/* ── Token 体系（暗/亮双主题） ── */
+:root {
+  --bg: #0c0e12;
+  --bg-subtle: #11131a;
+  --card: #161922;
+  --card-hover: #1c1f2a;
+  --border: #252a36;
+  --border-light: #2d3344;
+  --text: #dde1ea;
+  --text-secondary: #a8b0c2;
+  --muted: #6b7280;
+  --accent: #60a5fa;
+  --accent-soft: rgba(96,165,250,.10);
+  --star: #fbbf24;
+  --star-bg: rgba(251,191,36,.08);
+  --star-border: rgba(251,191,36,.22);
+  --tag-bg: rgba(255,255,255,.05);
+  /* 分类色 */
+  --c-ai: #60a5fa;
+  --c-robot: #34d399;
+  --c-industry: #c084fc;
+  --c-dev: #38bdf8;
+  --c-milpol: #f87171;
+  --c-other: #9ca3af;
+  /* 字体 */
+  --font-sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Consolas", monospace;
+  /* 圆角 */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  /* 阴影 */
+  --shadow-card: 0 1px 3px rgba(0,0,0,.30), 0 1px 2px rgba(0,0,0,.20);
+  --shadow-lift: 0 4px 12px rgba(0,0,0,.35);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f8faf;
+    --bg-subtle: #ffffff;
+    --card: #ffffff;
+    --card-hover: #f3f4f6;
+    --border: #e5e7eb;
+    --border-light: #d1d5db;
+    --text: #1f2937;
+    --text-secondary: #4b5563;
+    --muted: #9ca3af;
+    --accent: #2563eb;
+    --accent-soft: rgba(37,99,235,.07);
+    --star: #d97706;
+    --star-bg: rgba(217,119,6,.06);
+    --star-border: rgba(217,119,6,.18);
+    --tag-bg: rgba(0,0,0,.04);
+    --shadow-card: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+    --shadow-lift: 0 4px 16px rgba(0,0,0,.10);
+  }
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 15px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  padding: 32px 24px 64px;
+  max-width: 1120px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Header ── */
+.header { margin-bottom: 32px; }
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+}
+.header .meta {
+  color: var(--muted);
+  font-size: .8rem;
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Stats Grid ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 18px 16px;
+  box-shadow: var(--shadow-card);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.stat:hover {
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-lift);
+}
+.stat .value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.stat .label {
+  color: var(--muted);
+  font-size: .75rem;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+/* ── Category Filter Bar ── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.filter-bar .label {
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  flex-shrink: 0;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: .78rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all .2s ease;
+  font-weight: 500;
+}
+.chip:hover { border-color: var(--border-light); background: var(--card-hover); }
+.chip.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.chip .count {
+  opacity: .65;
+  font-size: .72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Insights Panel ── */
+.insights {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-card);
+}
+.insights h2 {
+  font-size: .88rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.insights h2::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.insights ul { list-style: none; padding: 0; }
+.insights li {
+  padding: 6px 0 6px 16px;
+  position: relative;
+  font-size: .84rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+.insights li::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: var(--muted);
+  font-weight: 700;
+}
+.insights li .size {
+  color: var(--muted);
+  font-size: .76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Day Card ── */
+.day {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  margin-bottom: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: border-color .2s ease;
+}
+.day:hover { border-color: var(--border-light); }
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.day-header:hover { background: var(--card-hover); }
+.day-header:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: var(--r-lg);
+}
+
+.day-date {
+  font-weight: 650;
+  font-size: .92rem;
+  min-width: 120px;
+  letter-spacing: -.01em;
+}
+.day-weekday {
+  color: var(--muted);
+  font-size: .78rem;
+}
+.day-issue {
+  color: var(--muted);
+  font-size: .74rem;
+  background: var(--tag-bg);
+  padding: 1px 8px;
+  border-radius: 999px;
+}
+.day-star { color: var(--star); font-size: .82rem; flex-shrink: 0; }
+.day-count {
+  color: var(--muted);
+  font-size: .78rem;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+.day-arrow {
+  color: var(--muted);
+  font-size: .65rem;
+  transition: transform .2s ease;
+  margin-left: 8px;
+}
+.day.expanded .day-arrow { transform: rotate(90deg); }
+
+.day-body {
+  display: none;
+  padding: 4px 20px 18px;
+  border-top: 1px solid var(--border);
+}
+.day.expanded .day-body { display: block; }
+
+/* ── Entry ── */
+.entry {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.entry:last-child { border-bottom: none; }
+
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.entry-title {
+  font-weight: 600;
+  font-size: .88rem;
+  line-height: 1.45;
+}
+.entry-summary {
+  color: var(--text-secondary);
+  font-size: .82rem;
+  margin-top: 4px;
+  line-height: 1.6;
+}
+.entry-link {
+  font-size: .76rem;
+  margin-top: 5px;
+  display: inline-block;
+  word-break: break-all;
+}
+
+/* ── Tag ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: .68rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1px 8px;
+  vertical-align: middle;
+  background: var(--tag-bg);
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.tag.ai     { color: var(--c-ai); }
+.tag.robot  { color: var(--c-robot); }
+.tag.industry { color: var(--c-industry); }
+.tag.dev    { color: var(--c-dev); }
+.tag.milpol { color: var(--c-milpol); }
+.tag.other  { color: var(--c-other); }
+
+/* ── Focus Block ── */
+.focus {
+  margin-top: 14px;
+  background: var(--star-bg);
+  border: 1px solid var(--star-border);
+  border-radius: var(--r-sm);
+  padding: 12px 16px;
+  font-size: .84rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+.focus strong { color: var(--star); font-weight: 600; }
+
+/* ── Loading / Empty ── */
+.loading, .empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 56px 0;
+  font-size: .88rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  body { padding: 16px 12px 40px; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat { padding: 14px 12px; }
+  .stat .value { font-size: 1.4rem; }
+  .day-header { padding: 12px 14px; }
+  .day-body { padding: 4px 14px 14px; }
+  .insights { padding: 16px 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>科技情报大屏</h1>
+  <div class="meta" id="gen-at">加载中…</div>
+</header>
+
+<section class="stats" id="stats"></section>
+
+<nav class="filter-bar" id="catbar"></nav>
+
+<main id="list"><div class="loading">加载中…</div></main>
+
+<script>
+let IDX = null, MONTH_CACHE = {}, activeCat = null;
+
+const CAT_LABEL = {
+  ai:      'AI/大模型',
+  robot:   '机器人',
+  industry:'科技行业',
+  dev:     '开源/开发',
+  milpol:  '军事/政策/商业',
+  other:   '其他'
+};
+const CAT_ORDER = ['ai','robot','industry','dev','milpol','other'];
+
+function esc(s) {
+  return (s || '').replace(/[&<>"']/g, function(c) {
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  });
+}
+
+async function j(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(url);
+  return r.json();
+}
+
+async function loadMonth(m) {
+  if (!MONTH_CACHE[m]) MONTH_CACHE[m] = await j('data/monthly/' + m + '.json');
+  return MONTH_CACHE[m];
+}
+
+async function loadAllMonths() {
+  for (const m of IDX.months) await loadMonth(m);
+}
+
+function renderStats() {
+  var t = IDX.totals;
+  document.getElementById('gen-at').textContent =
+    '生成于 ' + new Date(IDX.generatedAt).toLocaleString('zh-CN', {hour12:false}) +
+    ' · 数据源 tech-intel/memory/intel';
+
+  var statItems = [
+    ['情报总条数', t.entries],
+    ['覆盖天数',   t.days],
+    ['近7天',      t.last7],
+    ['近30天',     t.last30],
+    ['⭐ 点评数',  t.focus],
+    ['专题报告',   t.insights]
+  ];
+
+  document.getElementById('stats').innerHTML = statItems.map(function(pair) {
+    return '<div class="stat"><div class="value">' + pair[1] +
+           '</div><div class="label">' + pair[0] + '</div></div>';
+  }).join('');
+
+  var chipsHtml = CAT_ORDER.filter(function(c) { return IDX.byCategory[c]; }).map(function(c) {
+    var n = IDX.byCategory[c];
+    var pct = Math.round(n / t.entries * 100);
+    return '<button class="chip" data-cat="' + c + '">' + CAT_LABEL[c] +
+           '<span class="count">' + n + ' · ' + pct + '%</span></button>';
+  }).join('');
+
+  document.getElementById('catbar').innerHTML =
+    '<span class="label">分类筛选</span>' + chipsHtml;
+
+  var chips = document.getElementById('catbar').querySelectorAll('.chip');
+  for (var i = 0; i < chips.length; i++) {
+    (function(ch) {
+      ch.addEventListener('click', function() { toggleCat(ch.dataset.cat); });
+    })(chips[i]);
+  }
+}
+
+function toggleCat(c) {
+  activeCat = (activeCat === c) ? null : c;
+  var chips = document.getElementById('catbar').querySelectorAll('.chip');
+  for (var i = 0; i < chips.length; i++) {
+    chips[i].classList.toggle('active', chips[i].dataset.cat === activeCat);
+  }
+  renderList();
+}
+
+function entryHtml(e) {
+  if (activeCat && e.category !== activeCat) return '';
+  return '<div class="entry">' +
+    '<div class="entry-head">' +
+      '<span class="tag ' + e.category + '">' + (CAT_LABEL[e.category] || e.category) + '</span>' +
+      '<span class="entry-title">' + esc(e.title) + '</span>' +
+    '</div>' +
+    (e.summary ? '<div class="entry-summary">' + esc(e.summary) + '</div>' : '') +
+    '<a class="entry-link" href="' + esc(e.url) + '" target="_blank" rel="noopener noreferrer">' +
+      esc(shortUrl(e.url)) + ' ↗</a>' +
+    '</div>';
+}
+
+function shortUrl(u) {
+  try {
+    var x = new URL(u);
+    return x.hostname.replace(/^www\./, '');
+  } catch(e) { return u; }
+}
+
+async function renderList() {
+  var el = document.getElementById('list');
+  if (activeCat) { await loadAllMonths(); }
+
+  var months = activeCat ? IDX.months : [IDX.months[IDX.months.length - 1]].filter(Boolean);
+  var html = '';
+
+  for (var mi = 0; mi < months.length; mi++) {
+    var data = await loadMonth(months[mi]);
+    for (var di = 0; di < data.days.length; di++) {
+      var d = data.days[di];
+      if (activeCat && !d.entries.some(function(e) { return e.category === activeCat; })) continue;
+
+      var entries = d.entries.map(entryHtml).join('');
+      html += '<div class="day" data-date="' + d.date + '">' +
+        '<div class="day-header" tabindex="0" role="button" aria-expanded="false">' +
+          '<span class="day-date">' + d.date.slice(5) +
+            ' <span class="day-weekday">' + esc(d.weekday) + '</span>' +
+          '</span>' +
+          (d.issue > 1 ? '<span class="day-issue">增刊×' + d.issue + '</span>' : '') +
+          (d.hasFocus ? '<span class="day-star">★</span>' : '') +
+          '<span class="day-count">' + d.entries.length + ' 条</span>' +
+          '<span class="day-arrow">▶</span>' +
+        '</div>' +
+        '<div class="day-body">' + entries +
+          (d.focus ? '<div class="focus"><strong>★ 值得关注</strong>&emsp;' + esc(d.focus) + '</div>' : '') +
+        '</div></div>';
+    }
+  }
+
+  el.innerHTML = html || '<div class="empty">无匹配条目</div>';
+
+  var headers = el.querySelectorAll('.day-header');
+  for (var hi = 0; hi < headers.length; hi++) {
+    (function(h) {
+      var toggle = function() {
+        var dayEl = h.parentElement;
+        var isExp = dayEl.classList.toggle('expanded');
+        h.setAttribute('aria-expanded', String(isExp));
+      };
+      h.addEventListener('click', toggle);
+      h.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+    })(headers[hi]);
+  }
+}
+
+function renderInsights() {
+  if (!IDX.insights || !IDX.insights.length) return;
+  var box = document.createElement('div');
+  box.className = 'insights';
+  var items = IDX.insights.map(function(i) {
+    return '<li>' + esc(i.date) + ' · ' + esc(i.title) +
+      ' <span class="size">(' + Math.round(i.size / 1024) + ' KB)</span></li>';
+  }).join('');
+  box.innerHTML = '<h2>专题报告（L3 资产）</h2><ul>' + items + '</ul>';
+  document.getElementById('catbar').after(box);
+}
+
+(async function() {
+  try {
+    IDX = await j('data/index.json');
+    renderStats();
+    renderInsights();
+    renderList();
+  } catch(e) {
+    document.getElementById('list').innerHTML =
+      '<div class="empty">数据加载失败：' + esc(e.message) +
+      '（请先运行 gen-intel-dashboard.mjs）</div>';
+  }
+})();
+</script>
+
+</body>
+</html>

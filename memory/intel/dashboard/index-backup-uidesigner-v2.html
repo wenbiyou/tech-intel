@@ -98,189 +98,32 @@ a:hover { text-decoration:underline; }
 }
 .hero-sub { margin-top:8px; color:var(--text-muted); font-size:.82rem; }
 
-/* ══════════════════════════════════════════
-   STATS GRID — V3 炫酷重设计
-   ══════════════════════════════════════════ */
+/* ── STATS HERO GRID（非对称） ── */
 .stats-grid {
-  display:grid;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 36px;
+  display:grid; grid-template-columns:1.8fr 1fr 1fr 1fr 1fr 1fr; gap:14px; margin-bottom:36px;
 }
-
-/* ---- 统一卡片基底 ---- */
 .stat-card {
-  --card-accent: var(--c-ai);
-  --card-glow:  rgba(91,156,246,.18);
-  --card-glow-strong: rgba(91,156,246,.35);
-
-  background: var(--bg-card);
-  border-radius: var(--r-lg);
-  padding: 24px 20px;
-  position: relative;
-  overflow: hidden;
-  cursor: default;
-
-  /* 渐变描边（用伪元素模拟） */
-  border: 1px solid transparent;
-  background-clip: padding-box;
-
-  /* 内部径向光斑 */
-  transition:
-    transform .30s var(--ease-out-expo),
-    box-shadow .35s ease,
-    filter .30s ease;
-
-  opacity: 0;
-  animation: fadeUp .6s var(--ease-out-expo) forwards;
+  background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--r-lg);
+  padding:22px 20px; position:relative; overflow:hidden;
+  transition:transform .25s var(--ease-out-expo),border-color .25s ease,box-shadow .25s ease;
+  opacity:0; animation:fadeUp .6s var(--ease-out-expo) forwards;
 }
-.stat-card:nth-child(1){ animation-delay:.06s; --card-accent:var(--accent); --card-glow:rgba(91,156,246,.22); --card-glow-strong:rgba(91,156,246,.45); }
-.stat-card:nth-child(2){ animation-delay:.12s; --card-accent:var(--c-robot); --card-glow:rgba(61,214,140,.18); --card-glow-strong:rgba(61,214,140,.40); }
-.stat-card:nth-child(3){ animation-delay:.18s; --card-accent:var(--c-industry); --card-glow:rgba(199,125,255,.18); --card-glow-strong:rgba(199,125,255,.40); }
-.stat-card:nth-child(4){ animation-delay:.24s; --card-accent:var(--c-dev); --card-glow:rgba(56,198,248,.18); --card-glow-strong:rgba(56,198,248,.40); }
-.stat-card:nth-child(5){ animation-delay:.30s; --card-accent:var(--c-milpol); --card-glow:rgba(240,107,107,.18); --card-glow-strong:rgba(240,107,107,.40); }
-
-/* 渐变描边伪元素 */
-.stat-card::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    135deg,
-    var(--card-accent) 0%,
-    transparent 45%,
-    transparent 70%,
-    var(--card-accent) 100%
-  );
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events:none;
-  opacity: .55;
-  transition: opacity .30s ease;
-}
-
-/* 内部径向微光晕 */
-.stat-card::after {
-  content:"";
-  position:absolute;
-  width: 140%;
-  height: 120%;
-  top: -30%;
-  right: -35%;
-  background: radial-gradient(ellipse at center, var(--card-glow) 0%, transparent 70%);
-  pointer-events:none;
-  opacity: .7;
-  transition: opacity .30s ease, transform .35s var(--ease-out-expo);
-}
-
-/* hover 动感反馈 */
-.stat-card:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow:
-    0 8px 32px var(--card-glow),
-    0 0 24px var(--card-glow-strong);
-  filter: brightness(1.04);
-}
-.stat-card:hover::before { opacity: 1; }
-.stat-card:hover::after { opacity: 1; transform: scale(1.15) translate(-3%, 2%); }
-
-/* ---- 首卡戏剧化处理（情报总条数） ---- */
-.stat-card:first-child {
-  grid-row: span 1;
-  padding: 28px 24px;
-  background:
-    radial-gradient(ellipse 100% 80% at 50% 110%, var(--card-glow) 0%, transparent 60%),
-    var(--bg-card);
-}
-.stat-card:first-child::after {
-  width: 180%;
-  height: 150%;
-  top: -40%;
-  right: -50%;
-  background: radial-gradient(
-    ellipse at 60% 80%,
-    var(--card-glow-strong) 0%,
-    var(--card-glow) 30%,
-    transparent 65%
-  );
-  opacity: .55;
-}
+.stat-card:nth-child(1){animation-delay:.08s}.stat-card:nth-child(2){animation-delay:.13s}
+.stat-card:nth-child(3){animation-delay:.18s}.stat-card:nth-child(4){animation-delay:.23s}
+.stat-card:nth-child(5){animation-delay:.28s}.stat-card:nth-child(6){animation-delay:.33s}
+.stat-card:hover { transform:translateY(-2px); border-color:var(--border-hover); box-shadow:var(--shadow-md); }
 .stat-card:first-child::before {
-  background: linear-gradient(
-    135deg,
-    var(--accent) 0%,
-    var(--c-industry) 50%,
-    var(--accent) 100%
-  );
-  opacity: .75;
-}
-.stat-card:first-child:hover::before { opacity: 1; }
-.stat-card:first-child:hover::after { opacity: .85; transform: scale(1.1) translate(-2%, 1%); }
-
-/* 首卡左侧发光竖条 */
-.stat-card:first-child .stat-accent-bar {
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, var(--accent), var(--c-industry));
-  border-radius: 2px 0 0 2px;
-  box-shadow: 0 0 12px var(--card-glow-strong);
-}
-
-/* ---- 数字与标签 ---- */
-.stat-val-wrap {
-  position: relative;
-  display: inline-block;
+  content:""; position:absolute; left:0;top:0;bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--accent),var(--c-industry)); border-radius:2px 0 0 2px;
 }
 .stat-val {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: -.04em;
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-  color: var(--text);
-  /* 数字文字微辉光 */
-  text-shadow: 0 0 20px var(--card-glow);
-  transition: text-shadow .30s ease, transform .25s var(--ease-out-expo);
+  font-size:2.4rem; font-weight:800; letter-spacing:-.04em; line-height:1.1;
+  font-variant-numeric:tabular-nums; color:var(--text);
 }
-.stat-card:first-child .stat-val {
-  font-size: 3.4rem;
-  letter-spacing: -.05em;
-  text-shadow:
-    0 0 30px var(--card-glow-strong),
-    0 0 60px rgba(91,156,246,.15);
-}
-.stat-card:hover .stat-val {
-  transform: scale(1.05);
-  text-shadow: 0 0 28px var(--card-glow-strong);
-}
-.stat-card:first-child:hover .stat-val {
-  text-shadow:
-    0 0 40px var(--card-glow-strong),
-    0 0 80px rgba(91,156,246,.20);
-}
-
+.stat-card:first-child .stat-val { font-size:3.2rem; }
 .stat-lbl {
-  color: var(--text-muted);
-  font-size: .72rem;
-  font-weight: 500;
-  margin-top: 8px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.stat-lbl-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--card-accent);
-  box-shadow: 0 0 6px var(--card-glow);
-  flex-shrink: 0;
+  color:var(--text-muted); font-size:.72rem; font-weight:500; margin-top:6px;
+  text-transform:uppercase; letter-spacing:.04em;
 }
 
 /* ── FILTER BAR ── */
@@ -317,6 +160,33 @@ a:hover { text-decoration:underline; }
 .chip[data-cat="milpol"].active  {background:var(--c-milpol-bg);border-color:rgba(240,107,107,.25);color:var(--c-milpol)}
 .chip[data-cat="other"].active   {background:var(--c-other-bg);border-color:rgba(139,149,168,.20);color:var(--c-other)}
 .chip .count { opacity:.6; font-size:.70rem; font-variant-numeric:tabular-nums; }
+
+/* ── INSIGHTS PANEL ── */
+.insights-panel {
+  background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--r-xl);
+  padding:24px 28px; margin-bottom:32px; position:relative; overflow:hidden;
+  opacity:0; animation:fadeUp .6s var(--ease-out-expo) .43s forwards;
+}
+.insights-panel::before {
+  content:""; position:absolute; top:0;left:0;right:0; height:2px;
+  background:linear-gradient(90deg,var(--c-industry),var(--accent),var(--c-ai)); opacity:.7;
+}
+.insights-panel h2 {
+  font-size:.85rem; font-weight:700; margin-bottom:14px; color:var(--text);
+  display:flex; align-items:center; gap:10px; letter-spacing:-.01em;
+}
+.insights-list { list-style:none; }
+.insights-list li {
+  padding:9px 0 9px 18px; position:relative; font-size:.84rem; color:var(--text-secondary);
+  line-height:1.55; border-bottom:1px solid var(--border-subtle); transition:background .15s ease;
+}
+.insights-list li:last-child { border-bottom:none; }
+.insights-list li:hover { background:var(--bg-card-hover); margin:0 -12px; padding-left:30px; border-radius:var(--r-sm); }
+.insights-list li::before {
+  content:""; position:absolute; left:4px;top:50%; transform:translateY(-50%);
+  width:5px;height:5px; border-radius:50%; background:var(--c-industry); opacity:.6;
+}
+.isz { color:var(--text-muted); font-size:.74rem; font-variant-numeric:tabular-nums; margin-left:6px; }
 
 /* ── TIMELINE ── */
 .timeline { opacity:0; animation:fadeUp .6s var(--ease-out-expo) .48s forwards; }
@@ -400,7 +270,6 @@ a:hover { text-decoration:underline; }
 @media (max-width:960px) {
   .stats-grid { grid-template-columns:repeat(3,1fr); }
   .stat-card:first-child .stat-val { font-size:2.4rem; }
-  .stat-card:first-child { grid-column: span 3; }
 }
 @media (max-width:640px) {
   .shell { padding:20px 14px 48px; }
@@ -409,6 +278,7 @@ a:hover { text-decoration:underline; }
   .stat-card:first-child .stat-val { font-size:2.2rem; }
   .hero h1 { font-size:1.35rem; }
   .day-head { padding:12px 14px; } .day-body { padding:4px 14px 16px; }
+  .insights-panel { padding:18px 16px; border-radius:var(--r-lg); }
 }
 </style>
 </head>
@@ -457,62 +327,20 @@ async function loadMonth(m) {
 }
 async function loadAllMonths() { for(const m of IDX.months) await loadMonth(m); }
 
-/* ══════════════════════════════════════════
-   COUNT-UP 动画引擎（V3 新增）
-   缓动：easeOutExpo；reduced-motion 下直接显示终值
-   ══════════════════════════════════════════ */
-const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-function countUp(el, target, duration) {
-  if (REDUCED_MOTION || duration <= 0) { el.textContent = target; return; }
-  const start = performance.now();
-  function tick(now) {
-    const p = Math.min((now - start) / duration, 1);
-    // easeOutExpo
-    const eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
-    el.textContent = String(Math.round(eased * target));
-    if (p < 1) requestAnimationFrame(tick);
-    else el.textContent = target;
-  }
-  requestAnimationFrame(tick);
-}
-
-/* 统计卡配置（V3：每张卡独立 accent 色系） */
-const STAT_ITEMS = [
-  { key: 'entries', label: '情报总条数', hero: true },
-  { key: 'days',    label: '覆盖天数',   hero: false },
-  { key: 'last7',   label: '近7天',      hero: false },
-  { key: 'last30',  label: '近30天',     hero: false },
-  { key: 'focus',   label: '⭐ 点评数',  hero: false },
-];
-
 function renderStats() {
-  var t = IDX.totals;
+  var t=IDX.totals;
   document.getElementById('gen-at').textContent =
     new Date(IDX.generatedAt).toLocaleString('zh-CN',{hour12:false}) +
     ' · 数据源 tech-intel/memory/intel';
 
-  /* 渲染 5 张统计卡（移除专题报告） */
-  document.getElementById('stats').innerHTML = STAT_ITEMS.map(function(item, idx) {
-    var val = t[item.key];
-    var barHtml = item.hero ? '<div class="stat-accent-bar"></div>' : '';
-    return '<div class="stat-card">' + barHtml +
-      '<div class="stat-val-wrap"><span class="stat-val" data-target="' + val + '" data-duration="' + (item.hero ? 1600 : 1200) + '">0</span></div>' +
-      '<div class="stat-lbl"><span class="stat-lbl-dot"></span>' + item.label + '</div>' +
-      '</div>';
+  var items=[['情报总条数',t.entries],['覆盖天数',t.days],['近7天',t.last7],
+             ['近30天',t.last30],['⭐ 点评数',t.focus],['专题报告',t.insights]];
+
+  document.getElementById('stats').innerHTML=items.map(function(p){
+    return '<div class="stat-card"><div class="stat-val">'+p[1]+'</div><div class="stat-lbl">'+p[0]+'</div></div>';
   }).join('');
 
-  /* 启动 count-up 动画 */
-  var valEls = document.querySelectorAll('.stat-val[data-target]');
-  for (var vi = 0; vi < valEls.length; vi++) (function(el){
-    var target = parseInt(el.dataset.target, 10);
-    var dur = parseInt(el.dataset.duration, 10) || 1200;
-    // 延迟到入场动画差不多完成后开始滚动数字
-    setTimeout(function(){ countUp(el, target, dur); }, 400 + vi * 100);
-  })(valEls[vi]);
-
-  /* 筛选栏（不变） */
-  var chipsHtml = CAT_ORDER.filter(function(c){return IDX.byCategory[c]}).map(function(c){
+  var chipsHtml=CAT_ORDER.filter(function(c){return IDX.byCategory[c]}).map(function(c){
     var n=IDX.byCategory[c], pct=Math.round(n/t.entries*100);
     return '<button class="chip" data-cat="'+c+'">'+CAT_LABEL[c]+'<span class="count">'+n+' · '+pct+'%</span></button>';
   }).join('');
@@ -586,12 +414,20 @@ async function renderList() {
   })(headers[hi]);
 }
 
-/* 注意：renderInsights() 已在 V3 中彻底移除 */
+function renderInsights() {
+  if(!IDX.insights||!IDX.insights.length) return;
+  var box=document.createElement('div'); box.className='insights-panel';
+  box.innerHTML='<h2>专题报告（L3 资产）</h2><ul class="insights-list">'+
+    IDX.insights.map(function(i){
+      return '<li>'+esc(i.date)+' · '+esc(i.title)+' <span class="isz">('+Math.round(i.size/1024)+' KB)</span></li>';
+    }).join('')+'</ul>';
+  document.getElementById('catbar').after(box);
+}
 
 (async function(){
   try{
     IDX=await j('data/index.json');
-    renderStats(); renderList();
+    renderStats(); renderInsights(); renderList();
   }catch(e){
     document.getElementById('list').innerHTML=
       '<div class="empty-state">数据加载失败：'+esc(e.message)+'（请先运行 gen-intel-dashboard.mjs）</div>';
