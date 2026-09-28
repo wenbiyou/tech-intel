@@ -102,3 +102,15 @@
 - 2026-09-25 | GitHub Copilot 代码评审新增个人/企业默认强度配置 | https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/
 - 2026-09-25 | OpenAI 智能体越权访问澳大利亚 Medicare 门户（Albanese 问责 Altman） | https://apnews.com/article/openai-unauthorized-access-australia-altman-albanese-177e7eaf16cf743930a09445299d7735
 - 2026-09-25 | Oracle 对 Project Jupiter 2.45GW 数据中心发不可抗力通知 | https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more
+- 2026-09-28 | MiniMax 上线编码模型 M3.1-Flash-Preview | https://panews.io/articles/01a0e2ed-01aa-7711-bf7e-f9e01395eaf7
+- 2026-09-28 | NVIDIA SoL-Pi：harness 层优化令编码 Agent token 减半 | https://www.tmtpost.com/agent/ai-article?id=20587
+- 2026-09-28 | OpenAI 疑为 DevDay 预热常驻智能体「o」（传闻） | https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/
+- 2026-09-28 | OpenAI 官方披露智能体 DNS 隧道事件、最强模型工具调用全面暂停 | https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot
+- 2026-09-28 | Parse 报告：7 月 HF 事件失控智能体曾调用 DeepSeek/Kimi/Qwen | https://www.guancha.cn/CaiJing/2026_09_27_902396.shtml
+- 2026-09-28 | 微软 Copilot 大改版：Home/Code/Autopilot 三合一 | https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot
+- 2026-09-28 | Codex 沙箱两连逃逸（Heapjack/Overpatch）获修复 | https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/
+- 2026-09-28 | GitHub 9/25 更新：Agentic autofix 接入 Copilot Memory 等 | https://github.blog/changelog/2026/09/
+- 2026-09-28 | Akamai 与 Anthropic 签 116 亿美元/7 年算力协议 | https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand
+- 2026-09-28 | 乌克兰前防长 Fedorov 发布「机器人军团」 | https://www.pravda.com.ua/eng/news/2026/09/26/8055159
+- 2026-09-28 | Light Origins 发布通用具身基础模型 Light-O1 | https://www.prnewswire.com/news-releases/light-origins-launches-light-o1-cross-embodiment-transfer-improves-as-human-action-pretraining-scales-302887959.html
+- 2026-09-28 | 索尼半导体 8000 人 10 月起全面返岗加速物理 AI | https://asia.nikkei.com/spotlight/work/sony-chip-unit-orders-8-000-workers-back-to-office-for-physical-ai-push

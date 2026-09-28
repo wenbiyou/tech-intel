@@ -28,6 +28,7 @@ const log = (msg) => { if (!quiet) console.log(msg) }
 // ---------- 分类归一化 ----------
 const CAT_KEY = { 'AI/大模型': 'ai', '机器人': 'robot', '科技行业': 'industry', '开源/开发': 'dev' }
 const CAT_LABEL = { ai: 'AI/大模型', robot: '机器人', industry: '科技行业', dev: '开源/开发', milpol: '军事/政策/商业', other: '其他' }
+const ACTION_SET = new Set(['act', 'watch', 'archive']) // 消费率数据源（2026-09-27 起 digest 任务写入）
 function normCat(raw) {
   if (CAT_KEY[raw]) return CAT_KEY[raw]
   if (/军事|政策|商业/.test(raw)) return 'milpol'
@@ -97,12 +98,13 @@ function mergeJsonl(days, file) {
       const e = byKey.get(k)
       if (r.source) e.source = r.source
       if (r.star) e.star = true
+      if (ACTION_SET.has(r.action)) e.action = r.action
       // category 以 md 解析为准；仅当 md 归为 other 且 jsonl 有明确分类时采纳 jsonl
       if (e.category === 'other' && r.category && r.category !== 'other' && CAT_LABEL[r.category]) e.category = r.category
     } else if (r.date && r.url && r.title) {
       // jsonl 独有（md 解析漏检时兜底）
       const day = days.find(d => d.date === r.date)
-      const entry = { date: r.date, issue: r.issue || 1, category: CAT_LABEL[r.category] ? r.category : normCat(r.category || ''), title: r.title, summary: r.summary || '', url: r.url, source: r.source || '', star: !!r.star }
+      const entry = { date: r.date, issue: r.issue || 1, category: CAT_LABEL[r.category] ? r.category : normCat(r.category || ''), title: r.title, summary: r.summary || '', url: r.url, source: r.source || '', star: !!r.star, action: ACTION_SET.has(r.action) ? r.action : undefined }
       if (day) day.entries.push(entry)
       else days.push({ date: r.date, dateMD: r.date.slice(5), weekday: '', issue: 1, entries: [entry], focus: '' })
     }
@@ -112,7 +114,11 @@ function mergeJsonl(days, file) {
 function writeJsonl(days, file) {
   const rows = []
   for (const d of days.slice().sort((a, b) => a.date.localeCompare(b.date)))
-    for (const e of d.entries) rows.push(JSON.stringify({ date: e.date, issue: e.issue, category: e.category, title: e.title, summary: e.summary.slice(0, 500), url: e.url, source: e.source, star: e.star }))
+    for (const e of d.entries) {
+      const row = { date: e.date, issue: e.issue, category: e.category, title: e.title, summary: e.summary.slice(0, 500), url: e.url, source: e.source, star: e.star }
+      if (ACTION_SET.has(e.action)) row.action = e.action // 回写保留 action，防丢失
+      rows.push(JSON.stringify(row))
+    }
   fs.writeFileSync(file, rows.join('\n') + (rows.length ? '\n' : ''))
   return rows.length
 }
@@ -158,6 +164,50 @@ for (const d of allDays) for (const e of d.entries) byCat[e.category] = (byCat[e
 
 // 产出目录
 fs.mkdirSync(OUT_MONTHLY, { recursive: true })
+
+// ---------- 消费与转化数据（2026-09-27 新增：act 标注 + 周同步 + 学习链条） ----------
+const actionStats = { act: 0, watch: 0, archive: 0, untagged: 0, byMonth: {} }
+const actList = []
+for (const d of allDays) {
+  const month = d.date.slice(0, 7)
+  if (!actionStats.byMonth[month]) actionStats.byMonth[month] = { act: 0, watch: 0, archive: 0, untagged: 0 }
+  for (const e of d.entries) {
+    const a = ACTION_SET.has(e.action) ? e.action : 'untagged'
+    actionStats[a]++
+    actionStats.byMonth[month][a]++
+    if (a === 'act') actList.push({ date: e.date, title: e.title, url: e.url })
+  }
+}
+const tagged = actionStats.act + actionStats.watch + actionStats.archive
+// 周同步桥文件（weekly-sync/YYYY-Www.md）
+const syncDir = path.join(ROOT, 'weekly-sync')
+const weeklySync = { count: 0, latest: null }
+if (fs.existsSync(syncDir)) {
+  const wsFiles = fs.readdirSync(syncDir).filter(f => /^\d{4}-W\d{2}\.md$/.test(f)).sort()
+  weeklySync.count = wsFiles.length
+  if (wsFiles.length) weeklySync.latest = { week: wsFiles[wsFiles.length - 1].replace('.md', '') }
+}
+// 学习链条（来自月度趋势任务的 insights/YYYY-MM-metrics.json，存在则采用）
+const learning = { months: {}, latest: null }
+if (fs.existsSync(insightsDir)) {
+  for (const mf of fs.readdirSync(insightsDir).filter(f => /^\d{4}-\d{2}-metrics\.json$/.test(f)).sort()) {
+    try {
+      const mObj = JSON.parse(fs.readFileSync(path.join(insightsDir, mf), 'utf8'))
+      const mKey = mf.replace('-metrics.json', '')
+      learning.months[mKey] = mObj
+      learning.latest = mKey
+    } catch { /* 坏文件跳过 */ }
+  }
+}
+const conversion = {
+  generatedAt: now.toISOString(),
+  mechanismSince: '2026-09-27',
+  action: { tagged, act: actionStats.act, watch: actionStats.watch, archive: actionStats.archive, untagged: actionStats.untagged, actRate: tagged ? +(actionStats.act / tagged * 100).toFixed(1) : null, byMonth: actionStats.byMonth },
+  actList: actList.slice(-20),
+  weeklySync,
+  learning
+}
+fs.writeFileSync(path.join(OUT_DATA, 'conversion.json'), JSON.stringify(conversion))
 
 // 月度数据文件
 let writtenMonths = 0
@@ -320,5 +370,5 @@ const pagePath = path.join(OUT, 'index.html')
 if (fs.existsSync(pagePath)) log('index.html 已存在（设计资产），跳过模板写入')
 else fs.writeFileSync(pagePath, page)
 
-log(`DASH ok ${totalEntries}条 ${writtenMonths}月 jsonl回写${jsonlTotal}行 insights${insights.length}篇`)
+log(`DASH ok ${totalEntries}条 ${writtenMonths}月 jsonl回写${jsonlTotal}行 insights${insights.length}篇 act标注${tagged}(act=${actionStats.act}) 周同步${weeklySync.count}期`)
 console.log(`DASH ok ${totalEntries} entries, ${writtenMonths} months -> ${OUT}`)

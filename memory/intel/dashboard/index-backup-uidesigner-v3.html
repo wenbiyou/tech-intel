@@ -283,97 +283,6 @@ a:hover { text-decoration:underline; }
   flex-shrink: 0;
 }
 
-/* ══════════════════════════════════════════
-   消费与转化 — V4 新增（数据源 data/conversion.json）
-   卡片语言沿用 stats 区 .stat-card 体系
-   ══════════════════════════════════════════ */
-.conv-wrap { margin-bottom:36px; opacity:0; animation:fadeUp .6s var(--ease-out-expo) .34s forwards; }
-.conv-head { display:flex; align-items:center; gap:12px; margin-bottom:14px; flex-wrap:wrap; }
-.conv-title {
-  font-size:.72rem; font-weight:700; letter-spacing:.10em; text-transform:uppercase;
-  color:var(--text-secondary); display:inline-flex; align-items:center; gap:8px; flex-shrink:0;
-}
-.conv-title::before {
-  content:""; width:16px; height:2px; border-radius:1px; flex-shrink:0;
-  background:linear-gradient(90deg, var(--accent), transparent);
-}
-.conv-note { color:var(--text-muted); font-size:.72rem; }
-.conv-badge {
-  margin-left:auto; display:inline-flex; align-items:center; gap:7px;
-  font-size:.72rem; color:var(--text-secondary); font-variant-numeric:tabular-nums;
-  background:var(--bg-elevated); border:1px solid var(--border-subtle);
-  border-radius:999px; padding:4px 14px; white-space:nowrap;
-}
-.conv-badge b { color:var(--text); font-weight:650; }
-.conv-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--star); box-shadow:0 0 6px var(--star-glow); flex-shrink:0; }
-
-.conv-grid { display:grid; grid-template-columns:5fr 6fr; gap:16px; }
-.conv-grid .stat-card:first-child { grid-column:auto; } /* 覆盖 stats 断点的 span 规则 */
-.conv-loading { color:var(--text-muted); font-size:.76rem; padding:8px 0; }
-.conv-degraded { color:var(--text-muted); font-size:.74rem; padding:2px 0 6px; }
-
-/* act 转化率主视觉 */
-.conv-rate-row { display:flex; align-items:flex-end; gap:14px; flex-wrap:wrap; }
-.conv-rate-unit { font-size:1.15rem; font-weight:700; color:var(--text-secondary); }
-.conv-frac { color:var(--text-muted); font-size:.76rem; font-variant-numeric:tabular-nums; padding-bottom:7px; }
-.conv-frac b { color:var(--text-secondary); font-weight:650; }
-.conv-empty { font-size:1.45rem; font-weight:750; letter-spacing:-.02em; color:var(--text-secondary); }
-.conv-empty-sub { color:var(--text-muted); font-size:.74rem; margin-top:5px; }
-
-.conv-dist { margin-top:16px; display:flex; flex-direction:column; gap:8px; }
-.dist-row { display:flex; align-items:center; gap:10px; }
-.dist-lbl { width:76px; flex-shrink:0; font-size:.72rem; color:var(--text-secondary); font-weight:500; }
-.dist-track { flex:1; height:8px; border-radius:4px; background:var(--bg-elevated); border:1px solid var(--border-subtle); overflow:hidden; }
-.dist-fill { height:100%; width:0; border-radius:3px; transition:width .9s var(--ease-out-expo); }
-.dist-fill.f-act { background:linear-gradient(90deg, var(--c-robot), rgba(61,214,140,.50)); box-shadow:0 0 8px rgba(61,214,140,.22); }
-.dist-fill.f-watch { background:linear-gradient(90deg, var(--star), rgba(245,197,66,.50)); box-shadow:0 0 8px var(--star-glow); }
-.dist-fill.f-arch { background:linear-gradient(90deg, var(--c-other), rgba(139,149,168,.50)); }
-.dist-num { width:36px; text-align:right; font-size:.76rem; color:var(--text); font-weight:600; font-variant-numeric:tabular-nums; flex-shrink:0; }
-.dist-untag { color:var(--text-muted); font-size:.70rem; margin-top:2px; }
-
-/* 学习链条五段流 */
-.chain-flow { display:flex; align-items:flex-start; justify-content:space-between; gap:4px; margin:4px 0 2px; }
-.chain-node { display:flex; flex-direction:column; align-items:center; gap:4px; min-width:48px; }
-.chain-num {
-  font-size:1.55rem; font-weight:800; letter-spacing:-.03em; line-height:1.15;
-  font-variant-numeric:tabular-nums; color:var(--text-muted);
-  transition:color .3s ease, text-shadow .3s ease;
-}
-.chain-node.lit .chain-num { color:var(--text); text-shadow:0 0 16px var(--card-glow); }
-.chain-lbl { font-size:.68rem; color:var(--text-muted); font-weight:500; white-space:nowrap; }
-.chain-arrow { color:var(--text-muted); opacity:.45; font-size:.78rem; padding-top:9px; flex-shrink:0; }
-.chain-note { color:var(--text-muted); font-size:.70rem; margin-top:10px; line-height:1.5; }
-
-/* 最近 act 列表（可折叠） */
-.actlist {
-  margin-top:16px; background:var(--bg-card); border:1px solid var(--border-subtle);
-  border-radius:var(--r-lg); overflow:hidden;
-  transition:border-color .25s ease, box-shadow .25s ease;
-}
-.actlist:hover { border-color:var(--border-hover); box-shadow:var(--shadow-md); }
-.actlist summary {
-  list-style:none; display:flex; align-items:center; gap:12px; padding:13px 20px; cursor:pointer;
-  user-select:none; -webkit-tap-highlight-color:transparent; transition:background .2s ease;
-}
-.actlist summary::-webkit-details-marker { display:none; }
-.actlist summary:hover { background:var(--bg-card-hover); }
-.actlist summary:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
-.actlist-title { font-size:.78rem; font-weight:650; color:var(--text); }
-.actlist-count { font-size:.70rem; color:var(--text-muted); font-variant-numeric:tabular-nums; }
-.actlist .day-chevron { margin-left:auto; }
-.actlist[open] .day-chevron { transform:rotate(90deg); opacity:1; }
-.actlist-body { border-top:1px solid var(--border-subtle); padding:6px 20px 14px; background:rgba(0,0,0,.06); }
-.actlist-item {
-  display:flex; align-items:baseline; gap:12px; padding:10px 0 10px 14px;
-  border-bottom:1px dashed var(--border-subtle); text-decoration:none; position:relative;
-}
-.actlist-item:last-child { border-bottom:none; }
-.actlist-item::before { content:""; position:absolute; left:0; top:17px; width:4px; height:4px; border-radius:50%; background:var(--c-robot); }
-.actlist-date { font-size:.72rem; color:var(--text-muted); font-variant-numeric:tabular-nums; flex-shrink:0; }
-.actlist-name { font-size:.82rem; color:var(--text); font-weight:550; line-height:1.45; transition:color .15s ease; }
-.actlist-item:hover .actlist-name { color:var(--accent); }
-.actlist-go { font-size:.7rem; color:var(--text-muted); flex-shrink:0; }
-
 /* ── FILTER BAR ── */
 .filter-row {
   display:flex; align-items:center; gap:10px; flex-wrap:wrap;
@@ -490,7 +399,6 @@ a:hover { text-decoration:underline; }
 
 @media (max-width:960px) {
   .stats-grid { grid-template-columns:repeat(3,1fr); }
-  .conv-grid { grid-template-columns:1fr; }
   .stat-card:first-child .stat-val { font-size:2.4rem; }
   .stat-card:first-child { grid-column: span 3; }
 }
@@ -501,10 +409,6 @@ a:hover { text-decoration:underline; }
   .stat-card:first-child .stat-val { font-size:2.2rem; }
   .hero h1 { font-size:1.35rem; }
   .day-head { padding:12px 14px; } .day-body { padding:4px 14px 16px; }
-  .conv-grid { gap:10px; }
-  .chain-num { font-size:1.3rem; } .chain-node { min-width:40px; }
-  .dist-lbl { width:62px; font-size:.68rem; }
-  .actlist summary { padding:11px 14px; } .actlist-body { padding:4px 14px 12px; }
 }
 </style>
 </head>
@@ -523,17 +427,6 @@ a:hover { text-decoration:underline; }
 </header>
 
 <section class="stats-grid" id="stats"></section>
-
-<!-- ══ 消费与转化（V4）· 数据 data/conversion.json，加载失败整块降级为一行轻提示 ══ -->
-<section class="conv-wrap" id="conv" aria-label="消费与转化">
-  <div class="conv-head">
-    <span class="conv-title">消费与转化</span>
-    <span class="conv-note" id="conv-note">情报 → 行动 / 能力</span>
-    <span class="conv-badge" id="conv-weekly"></span>
-  </div>
-  <div class="conv-grid" id="conv-grid"><div class="conv-loading">消费与转化 · 加载中…</div></div>
-  <div id="conv-actlist"></div>
-</section>
 
 <nav class="filter-row" id="catbar"></nav>
 
@@ -695,154 +588,10 @@ async function renderList() {
 
 /* 注意：renderInsights() 已在 V3 中彻底移除 */
 
-/* ══════════════════════════════════════════
-   消费与转化区（V4 新增）
-   数据源 data/conversion.json；独立失败域：
-   fetch 失败 → 整块降级为一行轻提示，主时间线不受影响
-   ══════════════════════════════════════════ */
-function countUpDec(el, target, duration) {
-  /* 小数版 countUp：保留 1 位小数，整数不带尾 .0；reduced-motion 直接终值 */
-  function f(v){ var r=Math.round(v*10)/10; return r%1===0?String(r):r.toFixed(1); }
-  if (REDUCED_MOTION || duration <= 0) { el.textContent=f(target); return; }
-  var start=performance.now();
-  function tick(now){
-    var p=Math.min((now-start)/duration,1);
-    var eased=p===1?1:1-Math.pow(2,-10*p);
-    el.textContent=f(eased*target);
-    if(p<1) requestAnimationFrame(tick); else el.textContent=f(target);
-  }
-  requestAnimationFrame(tick);
-}
-
-function renderConversion(C) {
-  var A = C.action || {};
-  var tagged=A.tagged|0, actN=A.act|0, watchN=A.watch|0, archN=A.archive|0, untag=A.untagged|0;
-  var since = C.mechanismSince || '2026-09-27';
-  var sinceShort = since.length >= 10 ? since.slice(5) : since;   /* "09-27" */
-
-  var noteEl=document.getElementById('conv-note');
-  if(noteEl) noteEl.textContent='机制 '+sinceShort+' 启动 · 情报 → 行动 / 能力';
-
-  /* ── 卡1：act 转化率主视觉 + 分布条 ── */
-  var rate=null;
-  if(tagged>0){
-    rate=(typeof A.actRate==='number'&&isFinite(A.actRate))?A.actRate:actN/tagged*100;
-    rate=Math.round(rate*10)/10;
-  }
-  var rateBlock;
-  if(rate!=null){
-    rateBlock='<div class="conv-rate-row"><div class="stat-val-wrap">'+
-      '<span class="stat-val" id="conv-rate-num">0</span><span class="conv-rate-unit">%</span></div>'+
-      '<div class="conv-frac"><b>'+actN+'</b> act · <b>'+tagged+'</b> 已标注</div></div>';
-  }else{
-    rateBlock='<div class="conv-rate-row"><div><div class="conv-empty">待累积</div>'+
-      '<div class="conv-empty-sub">机制 '+esc(sinceShort)+' 启动 · 完成标注后开始计算</div></div></div>';
-  }
-
-  var dmax=Math.max(actN,watchN,archN,1);
-  function drow(cls,label,n){
-    var w=Math.round(n/dmax*1000)/10;
-    return '<div class="dist-row"><span class="dist-lbl">'+label+'</span>'+
-      '<div class="dist-track"><div class="dist-fill '+cls+'" data-w="'+w+'"></div></div>'+
-      '<span class="dist-num">'+n+'</span></div>';
-  }
-  var allZero=(actN+watchN+archN+untag)===0;
-  var distBlock='<div class="conv-dist">'+
-    drow('f-act','act 行动',actN)+drow('f-watch','watch 观察',watchN)+drow('f-arch','archive 归档',archN)+
-    '<div class="dist-untag">'+(allZero?('尚无标注数据 · 机制 '+esc(sinceShort)+' 启动'):('未标注 '+untag+' 条 · 不计入转化率'))+'</div>'+
-    '</div>';
-
-  var card1='<div class="stat-card"><div class="stat-accent-bar"></div>'+
-    rateBlock+
-    '<div class="stat-lbl"><span class="stat-lbl-dot"></span>act 转化率 · 情报 → 行动</div>'+
-    distBlock+
-    '</div>';
-
-  /* ── 卡2：学习链条五段流 情报→选题→学习→资产→被引用 ── */
-  var LM=(C.learning&&C.learning.months)||{};
-  var L=(C.learning&&C.learning.latest)||null;
-  if(!L||!L.chain){ var ks=Object.keys(LM).sort(); if(ks.length) L=LM[ks[ks.length-1]]; }
-  var hasL=!!(L&&L.chain);
-  var ch=hasL?(L.chain||{}):{};
-  var segs=[
-    ['情报',   hasL?((L.actTotal||0)|0):0],
-    ['选题',   (ch.topics||0)|0],
-    ['学习',   hasL?((L.actConverted||0)|0):0],
-    ['资产',   (ch.assets||0)|0],
-    ['被引用', (ch.cited||0)|0]
-  ];
-  var flowHtml='';
-  for(var si=0;si<segs.length;si++){
-    if(si) flowHtml+='<span class="chain-arrow">→</span>';
-    flowHtml+='<div class="chain-node'+(segs[si][1]>0?' lit':'')+'">'+
-      '<span class="chain-num">'+segs[si][1]+'</span><span class="chain-lbl">'+segs[si][0]+'</span></div>';
-  }
-  var monthTag=(hasL&&L.month)?' · '+esc(L.month):'';
-  var chainNote=(hasL&&L.chainNote)?esc(L.chainNote):('机制 '+sinceShort+' 启动 · 月度口径自 10-01 起产出');
-
-  var card2='<div class="stat-card">'+
-    '<div class="chain-flow">'+flowHtml+'</div>'+
-    '<div class="stat-lbl"><span class="stat-lbl-dot"></span>学习链条 · 情报长成能力'+monthTag+'</div>'+
-    '<div class="chain-note">'+chainNote+'</div>'+
-    '</div>';
-
-  document.getElementById('conv-grid').innerHTML=card1+card2;
-
-  /* 数字动画：转化率（小数版）+ 分布条宽度过渡 */
-  var rn=document.getElementById('conv-rate-num');
-  if(rn&&rate!=null) setTimeout(function(){ countUpDec(rn,rate,1400); },450);
-  var fills=document.querySelectorAll('#conv-grid .dist-fill');
-  requestAnimationFrame(function(){ requestAnimationFrame(function(){
-    for(var fi=0;fi<fills.length;fi++) fills[fi].style.width=fills[fi].dataset.w+'%';
-  });});
-
-  /* ── 周同步徽章 ── */
-  var W=C.weeklySync||{};
-  var wc=W.count|0;
-  var lt=W.latest;
-  var ltTxt='';
-  if(lt) ltTxt=(typeof lt==='object')?String(lt.week||lt.label||lt.date||''):String(lt);
-  document.getElementById('conv-weekly').innerHTML=
-    '<span class="conv-badge-dot"></span>周同步 <b id="conv-weekly-n">0</b> 期'+
-    (ltTxt?(' · 最新 '+esc(ltTxt)):' · 10-04 首期');
-  var wn=document.getElementById('conv-weekly-n');
-  if(wn) setTimeout(function(){ countUp(wn,wc,900); },450);
-
-  /* ── 最近 act 条目（可折叠，空则隐藏） ── */
-  var AL=Array.isArray(C.actList)?C.actList.slice(0,5):[];
-  var box=document.getElementById('conv-actlist');
-  if(AL.length){
-    var items='';
-    for(var ai=0;ai<AL.length;ai++){
-      var it=AL[ai]||{};
-      items+='<a class="actlist-item" href="'+esc(it.url||'#')+'" target="_blank" rel="noopener noreferrer">'+
-        '<span class="actlist-date">'+esc(String(it.date||'').slice(5))+'</span>'+
-        '<span class="actlist-name">'+esc(it.title||it.url||'')+'</span>'+
-        '<span class="actlist-go">↗</span></a>';
-    }
-    box.innerHTML='<details class="actlist"><summary>'+
-      '<span class="actlist-title">最近 act</span><span class="actlist-count">'+AL.length+' 条</span>'+
-      '<span class="day-chevron">▶</span></summary>'+
-      '<div class="actlist-body">'+items+'</div></details>';
-  }
-}
-
-async function loadConversion(){
-  try{
-    var C=await j('data/conversion.json');
-    renderConversion(C);
-  }catch(e){
-    /* 整块降级为一行轻提示，不影响主时间线 */
-    var sec=document.getElementById('conv');
-    sec.innerHTML='<div class="conv-degraded">消费与转化 · 数据暂不可用（data/conversion.json 缺失或格式错误），不影响统计与时间线</div>';
-  }
-}
-
 (async function(){
   try{
     IDX=await j('data/index.json');
     renderStats(); renderList();
-    loadConversion();   /* V4：独立失败域，不 await、不阻塞主时间线 */
   }catch(e){
     document.getElementById('list').innerHTML=
       '<div class="empty-state">数据加载失败：'+esc(e.message)+'（请先运行 gen-intel-dashboard.mjs）</div>';
