@@ -4,16 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-15 | 英伟达/Palantir/Booz Allen 限制内部使用 Anthropic 模型 | https://www.sohu.com/a/1076090006_122014422
-- 2026-09-15 | 宇树发布 G1+ 人形机器人（颈 2 自由度/扭矩 +110%/9.5 万元起） | https://www.thestandard.com.hk/innovation/article/342731/Unitree-launches-upgraded-G1-humanoid-robot
-- 2026-09-15 | Ars 深度：宇树成本控制哲学+美国 7/28 起禁进口外国产整机机器人 | https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/
-- 2026-09-15 | 美股芯片股全线重挫：费半 -5.9%、成份股全跌（AI 降速呼声冲击） | https://finance.eastmoney.com/a/202609153874057734.html
-- 2026-09-15 | iOS 27 正式推送、Siri AI 公测上线（训练用 Gemini，英语/15 Pro 起） | https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here
-- 2026-09-15 | 台积电据报道拟 2028 年底 CoWoS 产能翻倍至约 26 万片/月 | https://rcrtech.com/semiconductor-news/tsmc-double-cowos-capacity-by-2028/
-- 2026-09-15 | NVIDIA 扩展开源 CUDA-Q 平台（CUDA-Q Logical+QUOPS 基准） | https://nvidianews.nvidia.com/news/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing
-- 2026-09-15 | 特朗普 All-In 峰会现场致电黄仁勋：称数据中心反对声是"骗局" | https://www.cnbc.com/2026/09/14/trump-phones-nvidia-huang-all-in-calls-data-center-opposition-hoax.html
-- 2026-09-15 | Anthropic 威胁报告新增细节：中国关联反鱼雷方案/伊朗关联目标建议 | https://www.sandboxx.us/news/anthropic-says-russian-and-chinese-actors-used-claude-as-a-weapons-engineering-assistant-for-drone-swarming-and-more
-- 2026-09-15 | 特斯拉官宣 Cybercab 9 月 17 日起京沪静态展示 | https://www.sohu.com/a/1076090006_122014422
 - 2026-09-17 | OpenAI 拟 IPO 前再融资、拟定估值 1.2 万亿美元（FT/Reuters） | https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15
 - 2026-09-17 | 扎克伯格 X 帖反对 AI 联合减速、与 Amodei 降速呼吁正式分裂 | https://www.storyboard18.com/digital/metas-mark-zuckerberg-says-ai-labs-can-prioritise-safety-without-slowdown-110749.htm
 - 2026-09-17 | 智谱上调年末 ARR 指引至 30 亿美元、港股涨超 10% | https://www.163.com/dy/article/L701A3R20530NLC9.html
@@ -87,4 +77,14 @@
 - 2026-09-29 | 澳参议院传唤 Altman 与 Amodei 10/1 出席听证 | https://www.theguardian.com/australia-news/2026/sep/27/sam-altman-openai-dario-amodei-anthropic-senate-inquiry-medicare-hack-rogue-ai-agent-leak
 - 2026-09-29 | FT：开源模型占 Vercel AI Gateway 56% token、AT&T 40% 负载 | https://aiweekly.co/alerts/ft-open-models-hit-56-of-vercel-tokens-and-40-of-att-ai-workloads-earnings-call
 - 2026-09-29 | 上诉法院维持五角大楼对 Anthropic 供应链风险认定 | https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html
-- 2026-09-29 | 特朗普今日白宫会晤 AI 公司负责人（单源） | https://big5.sputniknews.cn/20260929/1073417725.html
+- 2026-09-30 | OpenAI DevDay 发布 GPT-6.1 Sol | https://openai.com/zh-Hans-CN/index/introducing-gpt-6-1-sol
+- 2026-09-30 | OpenAI 取消 GPT-6.1 Astra 十月发布（安全未达标） | https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html
+- 2026-09-30 | OpenAI 上线 $500/月 Pro 500 与 Ultrafast 速度档 | https://www.theverge.com/ai-artificial-intelligence/1002134/openai-is-adding-a-500-month-chatgpt-pro-tier
+- 2026-09-30 | OpenAI 发布 Dots 常驻智能体（对标 Muse） | https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor
+- 2026-09-30 | NVIDIA 发布开源 Open Agent Safety Platform | https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/
+- 2026-09-30 | Claude 9/29 全球性故障后全面恢复 | https://www.techradar.com/news/live/claude-down-september-29-2026
+- 2026-09-30 | OpenAI 开源 Codex harness（Dots 同源引擎） | https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced
+- 2026-09-30 | Anthropic 上线 Claude Marketplace（2000+ 连接器/插件） | https://www.ghacks.net/2026/09/27/anthropic-launches-claude-marketplace-with-more-than-2000-connectors-and-plugins/
+- 2026-09-30 | 白宫 AI 峰会：巨头签"自我监管"承诺 | https://www.cnn.com/2026/09/29/business/amodei-huang-karp-trump
+- 2026-09-30 | Altman：模型安全无自信承诺前不 IPO | https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety
+- 2026-09-30 | Reuters：Anthropic 5180 亿美元算力盘依赖不可取消条款 | https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29
