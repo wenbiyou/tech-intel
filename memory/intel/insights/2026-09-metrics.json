@@ -1,0 +1,14 @@
+{
+  "month": "2026-09",
+  "actTotal": 8,
+  "actConverted": 0,
+  "unverified": 8,
+  "weightSuggestions": 2,
+  "chain": {
+    "topics": 0,
+    "assets": 0,
+    "cited": 0
+  },
+  "chainNote": "转化率 0/8：action 字段 09-28 起才引入，8 条 act 均晚于唯一周同步文件 W39（09-27 生成、窗口 09-21~25）与学习链生效时点（10-01），且工作区检索无引用证据；情报学习链条 09-27 获批、10-01 生效，本月无带 source: weekly-sync 标注的学习产出",
+  "updatedAt": "2026-10-01T08:06:24+08:00"
+}

@@ -88,3 +88,7 @@
 - 2026-09-30 | 白宫 AI 峰会：巨头签"自我监管"承诺 | https://www.cnn.com/2026/09/29/business/amodei-huang-karp-trump
 - 2026-09-30 | Altman：模型安全无自信承诺前不 IPO | https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety
 - 2026-09-30 | Reuters：Anthropic 5180 亿美元算力盘依赖不可取消条款 | https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29
+- 2026-10-01 | Google 发布 Gemini 4 Argon（1M 输出/$2-$10/缓存-95%/分阶段安全放量） | https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
+- 2026-10-01 | 美参议院"Rogue AI"听证：METR/Apollo 等五证人就智能体失控作证 | https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/
+- 2026-10-01 | OpenClaw 发布 v2026.9.7（518 commits/2818 PR） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.7
+- 2026-10-01 | GPT-6.1 Sol 上线 GitHub Copilot | https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot
