@@ -4,12 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-17 | OpenAI 拟 IPO 前再融资、拟定估值 1.2 万亿美元（FT/Reuters） | https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15
-- 2026-09-17 | 扎克伯格 X 帖反对 AI 联合减速、与 Amodei 降速呼吁正式分裂 | https://www.storyboard18.com/digital/metas-mark-zuckerberg-says-ai-labs-can-prioritise-safety-without-slowdown-110749.htm
-- 2026-09-17 | 智谱上调年末 ARR 指引至 30 亿美元、港股涨超 10% | https://www.163.com/dy/article/L701A3R20530NLC9.html
-- 2026-09-17 | 英特尔 CEO 陈立武：内存价格已涨 5-7 倍、明年短缺更糟 | https://news.sbs.co.kr/english/article.do?news_id=N1008755839
-- 2026-09-17 | GitHub：PR 级 AI Scan 不再要求 CodeQL 默认配置 | https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup
-- 2026-09-17 | OpenAI 确认与 Anthropic/Google DeepMind 协调 AI 安全、称无需反垄断豁免 | https://news.bloomberglaw.com/crypto/openai-says-its-working-with-anthropic-google-on-ai-safety
 - 2026-09-21 | Anthropic 官宣 Claude 主导 26% 自家模型研发（90% 协作、约 3 万智能体） | https://abcnews.com/US/wireStory/anthropic-model-claude-helping-build-version-136547096
 - 2026-09-21 | Spirit AI 高阳：机器人"大脑"最快 2027 年中迎 GPT-3 时刻、进家庭还需 8 年 | https://www.ksl.com/article/51625634/founder-of-chinese-startup-spirit-ai-says-robot-brains-set-for-2027-breakthrough
 - 2026-09-21 | 黄仁勋苏格兰 AI 峰会：明年芯片销量将翻倍、反对全行业降速 | https://www.chosun.com/english/industry-en/2026/09/18/CTJL52GHLVHZBCMI7MZS6QJNGE/
@@ -92,3 +86,9 @@
 - 2026-10-01 | 美参议院"Rogue AI"听证：METR/Apollo 等五证人就智能体失控作证 | https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/
 - 2026-10-01 | OpenClaw 发布 v2026.9.7（518 commits/2818 PR） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.7
 - 2026-10-01 | GPT-6.1 Sol 上线 GitHub Copilot | https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot
+- 2026-10-02 | Anthropic 上线 Claude for Government 正式版（FedRAMP High、Code CLI 早访问） | https://claude.com/blog/claude-for-government-is-now-generally-available
+- 2026-10-02 | Claude Code 推出 mods 可编程扩展（同权限、不沙箱） | https://claude.com/blog/claude-code-mods
+- 2026-10-02 | FTC 确认对 OpenAI/Anthropic 等启动行业级智能体调查 | https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1
+- 2026-10-02 | HydraFusion 多模型编排进驻 VS Code 与 Copilot app | https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/
+- 2026-10-02 | Anthropic 拟最早 11 月中旬启动 IPO 路演（传最高 $2T） | https://invezz.com/en-ae/news/2026/10/01/anthropic-targets-mid-november-ipo-report/
+- 2026-10-02 | CoreWeave 发布 Forge 模型/智能体开发层 | https://www.coreweave.com/news/coreweave-forge-launches-turning-the-ai-loop-production-run-into-a-better-model-and-agent
