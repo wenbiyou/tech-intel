@@ -4,18 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-21 | Anthropic 官宣 Claude 主导 26% 自家模型研发（90% 协作、约 3 万智能体） | https://abcnews.com/US/wireStory/anthropic-model-claude-helping-build-version-136547096
-- 2026-09-21 | Spirit AI 高阳：机器人"大脑"最快 2027 年中迎 GPT-3 时刻、进家庭还需 8 年 | https://www.ksl.com/article/51625634/founder-of-chinese-startup-spirit-ai-says-robot-brains-set-for-2027-breakthrough
-- 2026-09-21 | 黄仁勋苏格兰 AI 峰会：明年芯片销量将翻倍、反对全行业降速 | https://www.chosun.com/english/industry-en/2026/09/18/CTJL52GHLVHZBCMI7MZS6QJNGE/
-- 2026-09-21 | Plugin4Shell：四大编码智能体插件零点击 RCE（Claude Code/Codex 已修、Gemini CLI 弃修） | https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335
-- 2026-09-21 | Claude Code 2.1.277 原生支持 AGENTS.md 回退（采纳开放规范） | https://github.com/anthropics/claude-code/tree/main/mods/agents-md
-- 2026-09-21 | npm 上线 stage-only 令牌（须 2FA 审批才发布） | https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation
-- 2026-09-21 | Bloomberg 调查：过时情报+Maven AI 链与伊朗小学误击（123 名儿童遇难） | https://www.bloomberg.com/graphics/2026-iran-school-attack
-- 2026-09-21 | 阶跃星辰 Step 5 Preview 官宣（600B MoE/1M 上下文，10/15 开源权重） | https://m.163.com/tech/article/L78VD8I600098IEO.html
-- 2026-09-21 | Reuters：Anthropic 权衡 IPO 前推新模型对抗 GPT-6 Astra | https://www.livemint.com/ai/anthropic-mulls-new-ai-model-ahead-of-ipo-to-counter-openais-gpt-6-astra-says-report-what-we-know-11789809806477.html
-- 2026-09-21 | 长鑫存储 CXMT 宣布 G5 DRAM 平台量产（11.95nm 半间距、LPDDR5X 上机） | https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html
-- 2026-09-21 | 特朗普宣布组建"AI Force"并任命 AI 沙皇 | https://www.cnn.com/2026/09/19/politics/trump-ai-task-force-czar
-- 2026-09-21 | 反垄断诉讼指控 Anthropic/OpenAI/SpaceXAI/Google 协调"AI 降速" | https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b
 - 2026-09-22 | xAI 正式发布 Grok 4.7（$2/$6 定价、同日上线 GitHub Copilot） | https://x.ai/news/grok-4-7
 - 2026-09-22 | Anthropic 年化收入据报奔 1000 亿美元、IPO 推迟至 11 月 | https://finance.yahoo.com/technology/ai/articles/anthropic-tops-100-billion-revenue-224001996.html
 - 2026-09-22 | 路透：中国监管实质冻结人形机器人 IPO（宇树自峰值腰斩） | https://www.zaobao.com.sg/news/china/story20260921-9708926
@@ -92,3 +80,13 @@
 - 2026-10-02 | HydraFusion 多模型编排进驻 VS Code 与 Copilot app | https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/
 - 2026-10-02 | Anthropic 拟最早 11 月中旬启动 IPO 路演（传最高 $2T） | https://invezz.com/en-ae/news/2026/10/01/anthropic-targets-mid-november-ipo-report/
 - 2026-10-02 | CoreWeave 发布 Forge 模型/智能体开发层 | https://www.coreweave.com/news/coreweave-forge-launches-turning-the-ai-loop-production-run-into-a-better-model-and-agent
+- 2026-10-05 | Microsoft AI 上线流式转写 MAI-Transcribe-2-Streaming 与 MAI-Voice 2.1 语音模型 | https://microsoft.ai/news/our-first-streaming-transcription-model
+- 2026-10-05 | OpenAI 披露第二家澳政府机构遭智能体越权访问（NSW 犯罪统计局） | https://abcnews.com/Business/openai-reveals-hack-government-agency-australia/story?id=136945837
+- 2026-10-05 | WSJ：OpenAI 解雇三名向外部安全机构泄密的研究员 | https://en.sedaily.com/international/2026/10/02/openai-fires-three-researchers-over-leaks-to-outside-ai
+- 2026-10-05 | Transluce：自主智能体对美加政府网站做初级黑客探测 | https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/
+- 2026-10-05 | GitHub Copilot 即日弃用 4 款模型（Gemini 3.5/3.6 Flash、Kimi K2.7 Code、Opus 4.7） | https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/
+- 2026-10-05 | Copilot computer use 公开预览：可代操作桌面应用 | https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps
+- 2026-10-05 | Copilot code review 开放 API、默认 Balanced 强度 | https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level
+- 2026-10-05 | Broadcom 为 Anthropic 筹约 600 亿美元芯片融资 | https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic
+- 2026-10-05 | 日本拟联合 Dell/Jera 推 $140B AI 数据中心计划 | https://www.ft.com/content/ec55a734-243b-43a2-93ea-8652d6b99309
+- 2026-10-05 | 华尔街冷对"芯片作抵押"的 AI 融资模式 | https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/
