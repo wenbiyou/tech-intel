@@ -90,3 +90,8 @@
 - 2026-10-05 | Broadcom 为 Anthropic 筹约 600 亿美元芯片融资 | https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic
 - 2026-10-05 | 日本拟联合 Dell/Jera 推 $140B AI 数据中心计划 | https://www.ft.com/content/ec55a734-243b-43a2-93ea-8652d6b99309
 - 2026-10-05 | 华尔街冷对"芯片作抵押"的 AI 融资模式 | https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/
+- 2026-10-06 | 纽约市议会 AI 风险听证：四大实验室宣誓作证、SpaceXAI 抗传票缺席 | https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html
+- 2026-10-06 | Guardian：OpenAI 安全负责人 David Robinson 辞职、称文化"已坏" | https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken
+- 2026-10-06 | Google skills（SKILL.md）今起在 Workspace 滚动推送、Gems 将退役 | https://www.theverge.com/ai-artificial-intelligence/1002993/googles-skills-replacement-for-gems-is-available-in-gemini-chats-starting-today
+- 2026-10-06 | GitHub Secret scanning 新增 Lovable/Supabase/Pydantic 检测器 | https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more/
+- 2026-10-06 | OpenClaw 发布 v2026.9.8（更新恢复/Windows 启动/智能体回复修复） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.8
