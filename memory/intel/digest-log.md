@@ -4,13 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-22 | xAI 正式发布 Grok 4.7（$2/$6 定价、同日上线 GitHub Copilot） | https://x.ai/news/grok-4-7
-- 2026-09-22 | Anthropic 年化收入据报奔 1000 亿美元、IPO 推迟至 11 月 | https://finance.yahoo.com/technology/ai/articles/anthropic-tops-100-billion-revenue-224001996.html
-- 2026-09-22 | 路透：中国监管实质冻结人形机器人 IPO（宇树自峰值腰斩） | https://www.zaobao.com.sg/news/china/story20260921-9708926
-- 2026-09-22 | 三星据报 2027 年 HBM4 产能至少翻倍（HBM 投片 18→25 万片/月） | https://www.digitimes.com/news/a20260921VL206/samsung-2027-hbm4-production-hbm.html
-- 2026-09-22 | OpenAI 呼吁美国主导全球 AI 技术标准、参与 Linux Foundation Appia Foundation | https://www.reuters.com/legal/government/openai-calls-us-take-lead-global-efforts-develop-technical-standards-2026-09-21
-- 2026-09-22 | GitHub 9/21 更新：Grok 4.7 进 Copilot、Enterprise 凭据清单导出 | https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/
-- 2026-09-22 | 美拟与中建立 AI 事件通报机制（贝森特×何立峰纽约会谈、设 AI 对话工作组） | https://apnews.com/article/bessent-ai-xi-trump-china-trade-2c7f54f07e755f506d9db9b91df282bd
 - 2026-09-23 | OpenAI 发布 GPT-6 Sol/Luna（价格砍半、同日上线 Copilot） | https://www.theverge.com/ai-artificial-intelligence/998997/openai-launches-faster-and-more-efficient-gpt-6-sol-and-luna-models
 - 2026-09-23 | Anthropic 发布 Claude Opus 5.5（对标 Fable 5.1、成本 -40%） | https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity
 - 2026-09-23 | Meta Muse 零日漏洞披露后约 24 小时热修复（本地劫持+iOS 远程） | https://gizmodo.com/meta-just-patched-a-major-zero-day-vulnerability-in-its-muse-ai-assistant-2000815429
@@ -95,3 +88,9 @@
 - 2026-10-06 | Google skills（SKILL.md）今起在 Workspace 滚动推送、Gems 将退役 | https://www.theverge.com/ai-artificial-intelligence/1002993/googles-skills-replacement-for-gems-is-available-in-gemini-chats-starting-today
 - 2026-10-06 | GitHub Secret scanning 新增 Lovable/Supabase/Pydantic 检测器 | https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more/
 - 2026-10-06 | OpenClaw 发布 v2026.9.8（更新恢复/Windows 启动/智能体回复修复） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.8
+- 2026-10-07 | Mistral 发布 Large 4 预览（Le Chonk，1T/49B 激活） | https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/
+- 2026-10-07 | Reflection AI 发布首个开放权重模型 Beam（501B/23B 激活） | https://reflection.ai/blog/introducing-beam
+- 2026-10-07 | SemiAnalysis：Anthropic 订阅 API 等价价值约为 OpenAI 中档计划 5 倍 | https://www.theregister.com/ai-and-ml/2026/10/06/anthropic-claude-subscription-plan-provides-more-value-than-openais-study-says/5301470
+- 2026-10-07 | 韩国总统：银行数据泄露疑 AI 智能体助攻（19 IP/12 国、7 家机构） | https://www.nytimes.com/2026/10/06/world/asia/south-korea-banks-hacked-ai.html
+- 2026-10-07 | GitHub Stacked Pull Requests 正式 GA | https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/
+- 2026-10-07 | Anthropic 扩容 Claude for Startups（免费一年 Team + $1,000 额度） | https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
