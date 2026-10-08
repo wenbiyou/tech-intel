@@ -4,16 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-23 | OpenAI 发布 GPT-6 Sol/Luna（价格砍半、同日上线 Copilot） | https://www.theverge.com/ai-artificial-intelligence/998997/openai-launches-faster-and-more-efficient-gpt-6-sol-and-luna-models
-- 2026-09-23 | Anthropic 发布 Claude Opus 5.5（对标 Fable 5.1、成本 -40%） | https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity
-- 2026-09-23 | Meta Muse 零日漏洞披露后约 24 小时热修复（本地劫持+iOS 远程） | https://gizmodo.com/meta-just-patched-a-major-zero-day-vulnerability-in-its-muse-ai-assistant-2000815429
-- 2026-09-23 | 特斯拉中国供应链审厂推进 Optimus 量产（2026 年约 5 万台计划） | https://cnevpost.com/2026/09/21/tesla-audits-china-suppliers-optimus-mass-production/
-- 2026-09-23 | 费半 +4.3%（8 月以来最大单日涨幅，Meta Muse 重振 AI 行情） | https://www.thehindubusinessline.com/markets/ai-trade-roars-back-as-metas-personal-agent-fuels-optimism/article71494034.ece
-- 2026-09-23 | Googlebook $899 开启预售（Android+Gemini 新品类笔记本） | https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/
-- 2026-09-23 | GitHub Copilot 同日接入 Claude Opus 5.5 与 GPT-6 Sol/Luna（Opus 5.5 输出带水印） | https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/
-- 2026-09-23 | GLM-5.3 753B 开源权重上线 Hugging Face（单源） | https://huggingface.co/zai-org/GLM-5.3
-- 2026-09-23 | 特朗普联大宣布 AI 更名 "Super Intelligence" | https://www.bbc.com/news/videos/c8n5d9x10v14o
-- 2026-09-23 | 德州暂停数据中心环保许可审批 | https://www.theverge.com/ai-artificial-intelligence/998986/texas-puts-data-center-permits-on-hold
 - 2026-09-24 | 阿里云栖大会：千问将训练 5-10 万亿参数模型、真武 V900 发布、2032 年 20GW 目标 | https://ali-home.alibaba.com/document-2039431633571938304
 - 2026-09-24 | Agility 发布第五代人形机器人 Digit 5（首个“协作安全”人形机器人） | https://tech.yahoo.com/science/articles/agility-debuts-first-cooperatively-safe-124000066.html
 - 2026-09-24 | 台积电据报道拟 2027 年 1 月起代工涨价 3%-6% | https://m.sohu.com/a/1080183928_130887
@@ -94,3 +84,9 @@
 - 2026-10-07 | 韩国总统：银行数据泄露疑 AI 智能体助攻（19 IP/12 国、7 家机构） | https://www.nytimes.com/2026/10/06/world/asia/south-korea-banks-hacked-ai.html
 - 2026-10-07 | GitHub Stacked Pull Requests 正式 GA | https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/
 - 2026-10-07 | Anthropic 扩容 Claude for Startups（免费一年 Team + $1,000 额度） | https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
+- 2026-10-08 | Anthropic 发布 Claude Haiku 5.5（$0.10/$0.50、同日进驻 Copilot） | https://www.unite.ai/anthropic-releases-claude-haiku-5-5-cutting-small-model-api-prices/
+- 2026-10-08 | Claude for Google Workspace 开启公测 | https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
+- 2026-10-08 | GitHub Copilot 本地沙箱正式 GA | https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available
+- 2026-10-08 | GitHub 上线专用泄露密钥检测模型 | https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/
+- 2026-10-08 | GitHub Copilot CLI 支持发现本地模型 | https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli
+- 2026-10-08 | SpaceX 拟融资 $40B 购买 NVIDIA AI 芯片 | https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06
