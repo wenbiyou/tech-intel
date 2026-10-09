@@ -4,15 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-24 | 阿里云栖大会：千问将训练 5-10 万亿参数模型、真武 V900 发布、2032 年 20GW 目标 | https://ali-home.alibaba.com/document-2039431633571938304
-- 2026-09-24 | Agility 发布第五代人形机器人 Digit 5（首个“协作安全”人形机器人） | https://tech.yahoo.com/science/articles/agility-debuts-first-cooperatively-safe-124000066.html
-- 2026-09-24 | 台积电据报道拟 2027 年 1 月起代工涨价 3%-6% | https://m.sohu.com/a/1080183928_130887
-- 2026-09-24 | 马斯克：中国 2-3 年内可凭光刻与芯片制造补齐算力缺口 | https://finance.sina.com.cn/roll/2026-09-23/doc-inisuxhf5284198.shtml
-- 2026-09-24 | GitHub Copilot app 本地沙箱 GA | https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app
-- 2026-09-24 | GitHub Actions Node 20 正式退场（runner 转 Node 24） | https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions
-- 2026-09-24 | Altman/Amodei 向联合国安理会通报 AI 风险、呼吁国际协调 | https://www.reuters.com/business/ai-leaders-brief-un-amid-warnings-technology-could-slip-beyond-human-control-2026-09-23
-- 2026-09-24 | Tekever 完成 5.8 亿美元 D 轮首关、估值 64 亿美元 | https://www.reuters.com/business/ai-drone-maker-tekever-valued-64-billion-after-580-million-funding-round-2026-09-23
-- 2026-09-24 | 加州组建专家组推进 AI"kill switch"落地 | https://www.gov.ca.gov/2026/09/23/governor-newsom-announces-world-leading-experts-to-deliver-on-his-ai-executive-order-including-advancing-creation-of-a-kill-switch
 - 2026-09-25 | DeepSeek 年化收入据报约 10 亿美元、拟近 75 亿美元融资（梁文锋披露） | https://www.thenews.com.pk/latest/1417424-chinese-ai-startup-deepseek-hits-1-billion-annualized-revenue-run-rate-following-api-price-hikes
 - 2026-09-25 | Google DeepMind：Gemini 4 进入后训练早期、Kavukcuoglu 称"远早于年底"推出 | https://aiweekly.co/alerts/deepminds-kavukcuoglu-targets-pre-year-end-gemini-4-ship
 - 2026-09-25 | Anthropic：Claude 智能体自主发现类 CRISPR 新型酶系统 ART | https://www.thehindubusinessline.com/news/science/anthropic-says-claude-discovers-novel-enzyme-system-with-crispr-like-properties/article71505495.ece
@@ -90,3 +81,12 @@
 - 2026-10-08 | GitHub 上线专用泄露密钥检测模型 | https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/
 - 2026-10-08 | GitHub Copilot CLI 支持发现本地模型 | https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli
 - 2026-10-08 | SpaceX 拟融资 $40B 购买 NVIDIA AI 芯片 | https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06
+- 2026-10-09 | Anthropic 给 Max/Team 订阅捆绑每月 Claude Platform API 额度 | https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans
+- 2026-10-09 | 微软 MAI-Code-1.1-Flash 端侧化（3-bit 量化/256K 上下文/本地零推理费） | https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/
+- 2026-10-09 | 开发者长测：DeepSeek 4.1 Flash 月账单 <$1 跑出 Opus 级编码（单源） | https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/
+- 2026-10-09 | 微软发布会：MXC 智能体容器管控升格 Windows 平台能力、本地模型进驻 Copilot | https://news.microsoft.com/windows-surface-october-2026-news/
+- 2026-10-09 | Anthropic 上线 Cyber Mission 与 CIDP（11 家创始伙伴）+ OSS Scanner | https://aiweekly.co/alerts/anthropic-launches-cyber-mission-with-11-founding-partners
+- 2026-10-09 | Firefox 158 公测支持 JPEG XL（Chrome 155 已默认启用，10/13 稳定版跟进） | https://www.mozilla.org/en-US/firefox/beta/notes
+- 2026-10-09 | 画师 David Revoy 许可证补充条款禁止 AI 衍生作品 | https://www.davidrevoy.com/article1178/license-update-ai-derivation-prohibited-on-all-my-art-lore-stories-and-comics
+- 2026-10-09 | GitHub 平台小幅改进：triage 角色可归档 PR、草稿 PR 计入限额等 | https://github.blog/changelog/2026/10
+- 2026-10-09 | State of AI Report 2026 发布（AI is building AI/物理 AI/推理繁荣/网络风险） | https://press.airstreet.com/p/state-of-ai-2026
