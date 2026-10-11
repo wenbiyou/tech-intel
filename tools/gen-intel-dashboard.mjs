@@ -158,7 +158,7 @@ const totalEntries = allDays.reduce((s, d) => s + d.entries.length, 0)
 const now = new Date()
 const daysAgo = (n) => new Date(now.getTime() - n * 86400000).toISOString().slice(0, 10)
 const in7 = allDays.filter(d => d.date >= daysAgo(6)).reduce((s, d) => s + d.entries.length, 0) /* F52 修正 2026-10-09：7 日历日窗口（今-6..今），原 daysAgo(7) 实为 8 天窗口（含今日+前7天），与页面重算口径差一天 */
-const in30 = allDays.filter(d => d.date >= daysAgo(30)).reduce((s, d) => s + d.entries.length, 0)
+const in30 = allDays.filter(d => d.date >= daysAgo(29)).reduce((s, d) => s + d.entries.length, 0) /* F52 同型修正 2026-10-11：30 日历日窗口（今-29..今），原 daysAgo(30) 实为 31 天窗口（含今日+前30天），与 last7 修正同型（夜学棒9） */
 const byCat = {}
 for (const d of allDays) for (const e of d.entries) byCat[e.category] = (byCat[e.category] || 0) + 1
 
