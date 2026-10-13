@@ -4,29 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-25 | DeepSeek 年化收入据报约 10 亿美元、拟近 75 亿美元融资（梁文锋披露） | https://www.thenews.com.pk/latest/1417424-chinese-ai-startup-deepseek-hits-1-billion-annualized-revenue-run-rate-following-api-price-hikes
-- 2026-09-25 | Google DeepMind：Gemini 4 进入后训练早期、Kavukcuoglu 称"远早于年底"推出 | https://aiweekly.co/alerts/deepminds-kavukcuoglu-targets-pre-year-end-gemini-4-ship
-- 2026-09-25 | Anthropic：Claude 智能体自主发现类 CRISPR 新型酶系统 ART | https://www.thehindubusinessline.com/news/science/anthropic-says-claude-discovers-novel-enzyme-system-with-crispr-like-properties/article71505495.ece
-- 2026-09-25 | 智元×长隆全球首个大型具身智能主题乐园横琴启幕（300+ 台机器人上岗） | https://www.caiwennews.com/article/1624244.shtml
-- 2026-09-25 | Meta Connect 2026：无摄像头 Ray-Ban 音频眼镜、VR 眼镜 $1,299、Muse Charm 钥匙扣 | https://apnews.com/article/meta-ai-zuckerberg-connect-conference-glasses-muse-75cf267699e215c7f3da3dc7eea31295
-- 2026-09-25 | 高通发布两款 2nm 旗舰 SoC（台积电 N2P、Oryon 主频破 5GHz） | https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry/
-- 2026-09-25 | Amazon 向外部 AI 智能体开放卖家工具（首发 Claude on Bedrock） | https://aiweekly.co/alerts/amazon-opens-seller-tools-to-outside-ai-agents-starts-with-claude-on-bedrock-at
-- 2026-09-25 | GitHub 上线"在场证明"：高风险操作强制交互式重认证（公开预览） | https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/
-- 2026-09-25 | GitHub Copilot 代码评审新增个人/企业默认强度配置 | https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/
-- 2026-09-25 | OpenAI 智能体越权访问澳大利亚 Medicare 门户（Albanese 问责 Altman） | https://apnews.com/article/openai-unauthorized-access-australia-altman-albanese-177e7eaf16cf743930a09445299d7735
-- 2026-09-25 | Oracle 对 Project Jupiter 2.45GW 数据中心发不可抗力通知 | https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more
-- 2026-09-28 | MiniMax 上线编码模型 M3.1-Flash-Preview | https://panews.io/articles/01a0e2ed-01aa-7711-bf7e-f9e01395eaf7
-- 2026-09-28 | NVIDIA SoL-Pi：harness 层优化令编码 Agent token 减半 | https://www.tmtpost.com/agent/ai-article?id=20587
-- 2026-09-28 | OpenAI 疑为 DevDay 预热常驻智能体「o」（传闻） | https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/
-- 2026-09-28 | OpenAI 官方披露智能体 DNS 隧道事件、最强模型工具调用全面暂停 | https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot
-- 2026-09-28 | Parse 报告：7 月 HF 事件失控智能体曾调用 DeepSeek/Kimi/Qwen | https://www.guancha.cn/CaiJing/2026_09_27_902396.shtml
-- 2026-09-28 | 微软 Copilot 大改版：Home/Code/Autopilot 三合一 | https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot
-- 2026-09-28 | Codex 沙箱两连逃逸（Heapjack/Overpatch）获修复 | https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/
-- 2026-09-28 | GitHub 9/25 更新：Agentic autofix 接入 Copilot Memory 等 | https://github.blog/changelog/2026/09/
-- 2026-09-28 | Akamai 与 Anthropic 签 116 亿美元/7 年算力协议 | https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand
-- 2026-09-28 | 乌克兰前防长 Fedorov 发布「机器人军团」 | https://www.pravda.com.ua/eng/news/2026/09/26/8055159
-- 2026-09-28 | Light Origins 发布通用具身基础模型 Light-O1 | https://www.prnewswire.com/news-releases/light-origins-launches-light-o1-cross-embodiment-transfer-improves-as-human-action-pretraining-scales-302887959.html
-- 2026-09-28 | 索尼半导体 8000 人 10 月起全面返岗加速物理 AI | https://asia.nikkei.com/spotlight/work/sony-chip-unit-orders-8-000-workers-back-to-office-for-physical-ai-push
 - 2026-09-29 | Anthropic 发布 Claude Sonnet 5.5（较上代快 30%+、价格不变） | https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/
 - 2026-09-29 | 清华系 NaiveAI 开源 Naive-N0.5-Flash（309B MoE/MIT/1M 上下文） | https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - 2026-09-29 | OpenAI 完整披露智能体错位审查：数十机构获通报、53 图外泄 | https://www.npr.org/2026/09/26/nx-s1-5981971/openai-says-its-ai-agents-probed-federal-websites-without-the-companys-knowledge
@@ -90,3 +67,10 @@
 - 2026-10-09 | 画师 David Revoy 许可证补充条款禁止 AI 衍生作品 | https://www.davidrevoy.com/article1178/license-update-ai-derivation-prohibited-on-all-my-art-lore-stories-and-comics
 - 2026-10-09 | GitHub 平台小幅改进：triage 角色可归档 PR、草稿 PR 计入限额等 | https://github.blog/changelog/2026/10
 - 2026-10-09 | State of AI Report 2026 发布（AI is building AI/物理 AI/推理繁荣/网络风险） | https://press.airstreet.com/p/state-of-ai-2026
+- 2026-10-13 | Meta 发布首个前沿级模型系列 Muse Wonder / Muse Wonder Full | https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/
+- 2026-10-13 | Karpathy：公众对 AI 认知断层扩大（约 75% 人口几乎未接触大模型） | https://www.businessinsider.com/andrej-karpathy-ai-gap-widening-usage-2026-10
+- 2026-10-13 | Anthropic Frontier Red Team：前沿模型或距「自我复制」能力仅数月 | https://www.anthropic.com/research/self-replicating-ai
+- 2026-10-13 | Anthropic 披露 Claude「意外越权行为」调查（上期未推） | https://www.anthropic.com/research/investigating-unintended-model-actions
+- 2026-10-13 | Firefox 158 正式版发布：JPEG XL 默认启用 | https://linuxiac.com/firefox-158-adds-jpeg-xl-support-improves-pdf-handling-on-linux/
+- 2026-10-13 | 微软公布 Maia 300、确认 Maia 200 量产并扩至多吉瓦级 | https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/
+- 2026-10-13 | NVIDIA×Cisco 发布 AI 工厂可插拔光学新形态 | https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories
