@@ -4,12 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-29 | Anthropic 发布 Claude Sonnet 5.5（较上代快 30%+、价格不变） | https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/
-- 2026-09-29 | 清华系 NaiveAI 开源 Naive-N0.5-Flash（309B MoE/MIT/1M 上下文） | https://huggingface.co/NaiveAI/Naive-N0.5-Flash
-- 2026-09-29 | OpenAI 完整披露智能体错位审查：数十机构获通报、53 图外泄 | https://www.npr.org/2026/09/26/nx-s1-5981971/openai-says-its-ai-agents-probed-federal-websites-without-the-companys-knowledge
-- 2026-09-29 | 澳参议院传唤 Altman 与 Amodei 10/1 出席听证 | https://www.theguardian.com/australia-news/2026/sep/27/sam-altman-openai-dario-amodei-anthropic-senate-inquiry-medicare-hack-rogue-ai-agent-leak
-- 2026-09-29 | FT：开源模型占 Vercel AI Gateway 56% token、AT&T 40% 负载 | https://aiweekly.co/alerts/ft-open-models-hit-56-of-vercel-tokens-and-40-of-att-ai-workloads-earnings-call
-- 2026-09-29 | 上诉法院维持五角大楼对 Anthropic 供应链风险认定 | https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html
 - 2026-09-30 | OpenAI DevDay 发布 GPT-6.1 Sol | https://openai.com/zh-Hans-CN/index/introducing-gpt-6-1-sol
 - 2026-09-30 | OpenAI 取消 GPT-6.1 Astra 十月发布（安全未达标） | https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html
 - 2026-09-30 | OpenAI 上线 $500/月 Pro 500 与 Ultrafast 速度档 | https://www.theverge.com/ai-artificial-intelligence/1002134/openai-is-adding-a-500-month-chatgpt-pro-tier
@@ -74,3 +68,13 @@
 - 2026-10-13 | Firefox 158 正式版发布：JPEG XL 默认启用 | https://linuxiac.com/firefox-158-adds-jpeg-xl-support-improves-pdf-handling-on-linux/
 - 2026-10-13 | 微软公布 Maia 300、确认 Maia 200 量产并扩至多吉瓦级 | https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/
 - 2026-10-13 | NVIDIA×Cisco 发布 AI 工厂可插拔光学新形态 | https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories
+- 2026-10-14 | Google Gemini 4 Argon 全球正式开放 | https://sea.mashable.com/tech/55849/google-releases-gemini-4-argon-its-new-frontier-model-benchmarks-how-to-try-it-and-pricing
+- 2026-10-14 | Gemini 4 Argon 正式进驻 GitHub Copilot | https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot
+- 2026-10-14 | Meta 披露 GitHub 仓库遭凭据入侵：约 1500 人代码与个人信息外泄 | https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/
+- 2026-10-14 | GitHub Copilot 企业托管设置可强制启动刷新、沙箱键加最低客户端版本 | https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates
+- 2026-10-14 | GitHub Apps 最小权限与管理改进 | https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management
+- 2026-10-14 | AI 智能体安全监控初创 Pluto 出 stealth（总融资 $42M） | https://aiweekly.co/alerts/pluto-security-exits-stealth-with-42m-to-monitor-enterprise-ai-agents-and-vibe
+- 2026-10-14 | Anthropic 自研 VCS「Scion」替代 Git（工程复盘） | https://www.anthropic.com/engineering/redesigning-source-control
+- 2026-10-14 | Gemma Transcribe：EmbeddingGemma 2 改造的 Mac 端语音转写（288 倍实时） | https://eg2.haku.sh/
+- 2026-10-14 | Decagon 聘投行并与 ServiceNow 进行早期收购谈判（$4.5B） | https://aiweekly.co/alerts/ai-customer-service-startup-decagon-hires-bank-holds-early-buyout-talks-with
+- 2026-10-14 | Scaleway 宣布欧洲首个商用 AMD MI355X AI 超算（瑞典） | https://www.finimize.com/content/scaleway-takes-its-first-ai-supercomputer-outside-france
