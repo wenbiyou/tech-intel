@@ -4,17 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-09-30 | OpenAI DevDay 发布 GPT-6.1 Sol | https://openai.com/zh-Hans-CN/index/introducing-gpt-6-1-sol
-- 2026-09-30 | OpenAI 取消 GPT-6.1 Astra 十月发布（安全未达标） | https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html
-- 2026-09-30 | OpenAI 上线 $500/月 Pro 500 与 Ultrafast 速度档 | https://www.theverge.com/ai-artificial-intelligence/1002134/openai-is-adding-a-500-month-chatgpt-pro-tier
-- 2026-09-30 | OpenAI 发布 Dots 常驻智能体（对标 Muse） | https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor
-- 2026-09-30 | NVIDIA 发布开源 Open Agent Safety Platform | https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/
-- 2026-09-30 | Claude 9/29 全球性故障后全面恢复 | https://www.techradar.com/news/live/claude-down-september-29-2026
-- 2026-09-30 | OpenAI 开源 Codex harness（Dots 同源引擎） | https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced
-- 2026-09-30 | Anthropic 上线 Claude Marketplace（2000+ 连接器/插件） | https://www.ghacks.net/2026/09/27/anthropic-launches-claude-marketplace-with-more-than-2000-connectors-and-plugins/
-- 2026-09-30 | 白宫 AI 峰会：巨头签"自我监管"承诺 | https://www.cnn.com/2026/09/29/business/amodei-huang-karp-trump
-- 2026-09-30 | Altman：模型安全无自信承诺前不 IPO | https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety
-- 2026-09-30 | Reuters：Anthropic 5180 亿美元算力盘依赖不可取消条款 | https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29
 - 2026-10-01 | Google 发布 Gemini 4 Argon（1M 输出/$2-$10/缓存-95%/分阶段安全放量） | https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
 - 2026-10-01 | 美参议院"Rogue AI"听证：METR/Apollo 等五证人就智能体失控作证 | https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/
 - 2026-10-01 | OpenClaw 发布 v2026.9.7（518 commits/2818 PR） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.7
@@ -78,3 +67,15 @@
 - 2026-10-14 | Gemma Transcribe：EmbeddingGemma 2 改造的 Mac 端语音转写（288 倍实时） | https://eg2.haku.sh/
 - 2026-10-14 | Decagon 聘投行并与 ServiceNow 进行早期收购谈判（$4.5B） | https://aiweekly.co/alerts/ai-customer-service-startup-decagon-hires-bank-holds-early-buyout-talks-with
 - 2026-10-14 | Scaleway 宣布欧洲首个商用 AMD MI355X AI 超算（瑞典） | https://www.finimize.com/content/scaleway-takes-its-first-ai-supercomputer-outside-france
+- 2026-10-15 | xAI 发布 Grok Voice 3.0 语音模型 | https://x.ai/news/grok-voice-3
+- 2026-10-15 | XBOW：AI 智能体用 GPT-5.6 六天造出 Chrome 全链漏洞利用获 $25 万赏金 | https://cyberinsider.com/google-pays-250k-bounty-for-ai-assisted-chrome-exploit-built-in-six-days/
+- 2026-10-15 | Swarmchasers 智能体舰队经腾讯云探测高德地图 | https://gbhackers.com/tencent-cloud-linked-ai-agent-fleet/
+- 2026-10-15 | Reuters：Anthropic/OpenAI 寻求对外部评测报告的编辑控制权 | https://www.centredaily.com/news/business/article317599978.html
+- 2026-10-15 | GitHub Actions workflow lockfiles 公开预览 | https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/
+- 2026-10-15 | GitHub Secret scanning 默认拦截 Anthropic API key | https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce/
+- 2026-10-15 | HydraFusion 编排更新并新增 Max 档 | https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/
+- 2026-10-15 | ViteConf 2026 今日线上举行 | https://viteconf.org/
+- 2026-10-15 | Mononoke 作者指 Anthropic Scion 借鉴未署名 | https://sunshowers.io/posts/anthropic-mononoke/
+- 2026-10-15 | 欧盟 AI Office 对 OpenAI/Anthropic 启动 AI Act 首批调查 | https://aiweekly.co/alerts/eu-ai-office-opens-first-ai-act-probes-into-openai-anthropic
+- 2026-10-15 | Anthropic 向机构投资者预路演 $1.8-2T IPO | https://finance.yahoo.com/technology/ai/articles/two-exit-doors-anthropic-2-051103937.html
+- 2026-10-15 | AI 基建金融双警报：Goolsbee 过热警告与 CoreWeave 债券收益率 15% | https://aiweekly.co/alerts/feds-goolsbee-warns-ai-data-center-buildout-may-be-overheating-us-economy-as
