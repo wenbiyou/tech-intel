@@ -4,16 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-01 | Google 发布 Gemini 4 Argon（1M 输出/$2-$10/缓存-95%/分阶段安全放量） | https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
-- 2026-10-01 | 美参议院"Rogue AI"听证：METR/Apollo 等五证人就智能体失控作证 | https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/
-- 2026-10-01 | OpenClaw 发布 v2026.9.7（518 commits/2818 PR） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.7
-- 2026-10-01 | GPT-6.1 Sol 上线 GitHub Copilot | https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot
-- 2026-10-02 | Anthropic 上线 Claude for Government 正式版（FedRAMP High、Code CLI 早访问） | https://claude.com/blog/claude-for-government-is-now-generally-available
-- 2026-10-02 | Claude Code 推出 mods 可编程扩展（同权限、不沙箱） | https://claude.com/blog/claude-code-mods
-- 2026-10-02 | FTC 确认对 OpenAI/Anthropic 等启动行业级智能体调查 | https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1
-- 2026-10-02 | HydraFusion 多模型编排进驻 VS Code 与 Copilot app | https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/
-- 2026-10-02 | Anthropic 拟最早 11 月中旬启动 IPO 路演（传最高 $2T） | https://invezz.com/en-ae/news/2026/10/01/anthropic-targets-mid-november-ipo-report/
-- 2026-10-02 | CoreWeave 发布 Forge 模型/智能体开发层 | https://www.coreweave.com/news/coreweave-forge-launches-turning-the-ai-loop-production-run-into-a-better-model-and-agent
 - 2026-10-05 | Microsoft AI 上线流式转写 MAI-Transcribe-2-Streaming 与 MAI-Voice 2.1 语音模型 | https://microsoft.ai/news/our-first-streaming-transcription-model
 - 2026-10-05 | OpenAI 披露第二家澳政府机构遭智能体越权访问（NSW 犯罪统计局） | https://abcnews.com/Business/openai-reveals-hack-government-agency-australia/story?id=136945837
 - 2026-10-05 | WSJ：OpenAI 解雇三名向外部安全机构泄密的研究员 | https://en.sedaily.com/international/2026/10/02/openai-fires-three-researchers-over-leaks-to-outside-ai
@@ -79,3 +69,19 @@
 - 2026-10-15 | 欧盟 AI Office 对 OpenAI/Anthropic 启动 AI Act 首批调查 | https://aiweekly.co/alerts/eu-ai-office-opens-first-ai-act-probes-into-openai-anthropic
 - 2026-10-15 | Anthropic 向机构投资者预路演 $1.8-2T IPO | https://finance.yahoo.com/technology/ai/articles/two-exit-doors-anthropic-2-051103937.html
 - 2026-10-15 | AI 基建金融双警报：Goolsbee 过热警告与 CoreWeave 债券收益率 15% | https://aiweekly.co/alerts/feds-goolsbee-warns-ai-data-center-buildout-may-be-overheating-us-economy-as
+- 2026-10-16 | Meta 开放 Muse Spark Open 权重（816B/42B，两台 M5 Ultra Mac Studio 可跑） | https://research.meta.ai/blog/muse-spark-open
+- 2026-10-16 | NVIDIA 开放 Nemotron 3.5 Super VL 权重（120B/12B，1M 上下文） | https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning
+- 2026-10-16 | FTC 向 OpenAI/Anthropic 发出民事传票（各超 50 页、拟强制高管作证） | https://www.cbsnews.com/news/ftc-subpoenas-anthropic-openai-consumer-protection/
+- 2026-10-16 | Anthropic 给 METR 员工级访问（嵌入式独立评估落地） | https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/
+- 2026-10-16 | Perplexity 公开 SPACE 沙箱攻防评测（VM 逃逸全失败、egress 是薄弱面） | https://www.perplexity.ai/en-GB/hub/blog/escaping-space-part-i
+- 2026-10-16 | ViteConf 2026：Evan You 宣布 Void 部署平台（Vite 原生、AI-native） | https://void.cloud/
+- 2026-10-16 | Anthropic 早期投资人预测 IPO 后估值最高 $2.4T | https://fortune.com/2026/10/15/anthropic-investor-ipo-financials
+- 2026-10-21 | DeepSeek 开源 DeepInfer 推理框架与 deepseek-recipe | https://www.ithome.com/1/015/429.htm
+- 2026-10-21 | Chrome 156 稳定版发布（模块失败可重试/IndexedDB SQLite 后端） | https://chromestatus.com/release-notes/156
+- 2026-10-21 | GitHub Package Firewall 公开预览（npm 供应链防火墙） | https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/
+- 2026-10-21 | OpenCode 2.0 稳定版：Code Mode 把 MCP 工具变成可编程函数 | https://www.infoq.cn/article/IK5AWDwovCu5lx3e3mhc
+- 2026-10-21 | Copilot model policy API 四级正式可用 | https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/
+- 2026-10-21 | OpenClaw 稳定版 v2026.10.4/10.5（Gateway 睡眠存活/群主仿冒修复） | https://github.com/openclaw/openclaw/releases/tag/v2026.10.4
+- 2026-10-21 | Dependabot 支持 npm 12/pnpm 11-12/Bun 1.4 | https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4/
+- 2026-10-21 | GitHub 开源许可证合规 GA（含智能体可用合规检查 API） | https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/
+- 2026-10-21 | OpenAI 收购 Orchestra Bio 并入 Rosalind 生命科学线 | https://openai.com/index/openai-to-acquire-orchestra-bio
