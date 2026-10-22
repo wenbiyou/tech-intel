@@ -4,27 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-05 | Microsoft AI 上线流式转写 MAI-Transcribe-2-Streaming 与 MAI-Voice 2.1 语音模型 | https://microsoft.ai/news/our-first-streaming-transcription-model
-- 2026-10-05 | OpenAI 披露第二家澳政府机构遭智能体越权访问（NSW 犯罪统计局） | https://abcnews.com/Business/openai-reveals-hack-government-agency-australia/story?id=136945837
-- 2026-10-05 | WSJ：OpenAI 解雇三名向外部安全机构泄密的研究员 | https://en.sedaily.com/international/2026/10/02/openai-fires-three-researchers-over-leaks-to-outside-ai
-- 2026-10-05 | Transluce：自主智能体对美加政府网站做初级黑客探测 | https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/
-- 2026-10-05 | GitHub Copilot 即日弃用 4 款模型（Gemini 3.5/3.6 Flash、Kimi K2.7 Code、Opus 4.7） | https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/
-- 2026-10-05 | Copilot computer use 公开预览：可代操作桌面应用 | https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps
-- 2026-10-05 | Copilot code review 开放 API、默认 Balanced 强度 | https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level
-- 2026-10-05 | Broadcom 为 Anthropic 筹约 600 亿美元芯片融资 | https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic
-- 2026-10-05 | 日本拟联合 Dell/Jera 推 $140B AI 数据中心计划 | https://www.ft.com/content/ec55a734-243b-43a2-93ea-8652d6b99309
-- 2026-10-05 | 华尔街冷对"芯片作抵押"的 AI 融资模式 | https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/
-- 2026-10-06 | 纽约市议会 AI 风险听证：四大实验室宣誓作证、SpaceXAI 抗传票缺席 | https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html
-- 2026-10-06 | Guardian：OpenAI 安全负责人 David Robinson 辞职、称文化"已坏" | https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken
-- 2026-10-06 | Google skills（SKILL.md）今起在 Workspace 滚动推送、Gems 将退役 | https://www.theverge.com/ai-artificial-intelligence/1002993/googles-skills-replacement-for-gems-is-available-in-gemini-chats-starting-today
-- 2026-10-06 | GitHub Secret scanning 新增 Lovable/Supabase/Pydantic 检测器 | https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more/
-- 2026-10-06 | OpenClaw 发布 v2026.9.8（更新恢复/Windows 启动/智能体回复修复） | https://github.com/openclaw/openclaw/releases/tag/v2026.9.8
-- 2026-10-07 | Mistral 发布 Large 4 预览（Le Chonk，1T/49B 激活） | https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/
-- 2026-10-07 | Reflection AI 发布首个开放权重模型 Beam（501B/23B 激活） | https://reflection.ai/blog/introducing-beam
-- 2026-10-07 | SemiAnalysis：Anthropic 订阅 API 等价价值约为 OpenAI 中档计划 5 倍 | https://www.theregister.com/ai-and-ml/2026/10/06/anthropic-claude-subscription-plan-provides-more-value-than-openais-study-says/5301470
-- 2026-10-07 | 韩国总统：银行数据泄露疑 AI 智能体助攻（19 IP/12 国、7 家机构） | https://www.nytimes.com/2026/10/06/world/asia/south-korea-banks-hacked-ai.html
-- 2026-10-07 | GitHub Stacked Pull Requests 正式 GA | https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/
-- 2026-10-07 | Anthropic 扩容 Claude for Startups（免费一年 Team + $1,000 额度） | https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
 - 2026-10-08 | Anthropic 发布 Claude Haiku 5.5（$0.10/$0.50、同日进驻 Copilot） | https://www.unite.ai/anthropic-releases-claude-haiku-5-5-cutting-small-model-api-prices/
 - 2026-10-08 | Claude for Google Workspace 开启公测 | https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
 - 2026-10-08 | GitHub Copilot 本地沙箱正式 GA | https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available
@@ -85,3 +64,13 @@
 - 2026-10-21 | Dependabot 支持 npm 12/pnpm 11-12/Bun 1.4 | https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4/
 - 2026-10-21 | GitHub 开源许可证合规 GA（含智能体可用合规检查 API） | https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/
 - 2026-10-21 | OpenAI 收购 Orchestra Bio 并入 Rosalind 生命科学线 | https://openai.com/index/openai-to-acquire-orchestra-bio
+- 2026-10-22 | LiteLLM 1.107.0 遭供应链投毒（PyPI wheel + Docker 植入凭据窃取器与 RAT） | https://securitylabs.datadoghq.com/articles/litellm-compromised-pypi-docker/
+- 2026-10-22 | Railway 披露安全事件：客户环境变量疑遭解密窃取、部署暂停 | https://blog.railway.com/p/security-disclosure-wednesday-october-21st
+- 2026-10-22 | OpenAI Patch the Planet：GPT-5.6 Sol 先于攻击者发现 PHP 严重漏洞并协同修复 | https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/
+- 2026-10-22 | Anthropic 发布 Claude Duet 常驻主动智能体（研究预览） | https://claude.com/product/claude-duet
+- 2026-10-22 | GitLab 紧急关键补丁 19.5.1（CVE-2026-110264 Critical 等） | https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/
+- 2026-10-22 | OpenClaw beta 线推进至 2026.10.10-beta.3 | https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3
+- 2026-10-22 | DuckDB 2.0.0 LTS「Cinnamon Teal」发布 | https://duckdb.org/2026/10/21/announcing-duckdb-200
+- 2026-10-22 | Vite 8.3.5 补丁发布 | https://github.com/vitejs/vite/releases/tag/v8.3.5
+- 2026-10-22 | OpenAI 模型与 Codex 即将进驻 Google Cloud | https://openai.com/index/openai-models-google-cloud/
+- 2026-10-22 | Meta 被判 $250 亿罚金（新墨西哥州 Cambridge Analytica 案） | https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html
