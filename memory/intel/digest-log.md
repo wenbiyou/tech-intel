@@ -4,12 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-08 | Anthropic 发布 Claude Haiku 5.5（$0.10/$0.50、同日进驻 Copilot） | https://www.unite.ai/anthropic-releases-claude-haiku-5-5-cutting-small-model-api-prices/
-- 2026-10-08 | Claude for Google Workspace 开启公测 | https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
-- 2026-10-08 | GitHub Copilot 本地沙箱正式 GA | https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available
-- 2026-10-08 | GitHub 上线专用泄露密钥检测模型 | https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/
-- 2026-10-08 | GitHub Copilot CLI 支持发现本地模型 | https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli
-- 2026-10-08 | SpaceX 拟融资 $40B 购买 NVIDIA AI 芯片 | https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06
 - 2026-10-09 | Anthropic 给 Max/Team 订阅捆绑每月 Claude Platform API 额度 | https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans
 - 2026-10-09 | 微软 MAI-Code-1.1-Flash 端侧化（3-bit 量化/256K 上下文/本地零推理费） | https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/
 - 2026-10-09 | 开发者长测：DeepSeek 4.1 Flash 月账单 <$1 跑出 Opus 级编码（单源） | https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/
@@ -74,3 +68,12 @@
 - 2026-10-22 | Vite 8.3.5 补丁发布 | https://github.com/vitejs/vite/releases/tag/v8.3.5
 - 2026-10-22 | OpenAI 模型与 Codex 即将进驻 Google Cloud | https://openai.com/index/openai-models-google-cloud/
 - 2026-10-22 | Meta 被判 $250 亿罚金（新墨西哥州 Cambridge Analytica 案） | https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html
+- 2026-10-23 | OpenAI 发布 Decisions API（gpt-6-luna、类型化决策答案、~10x 速度） | https://openai.com/index/decisions-api
+- 2026-10-23 | eMudhra CA 中间证书密钥被破解（8 把私钥可推算、可伪造任意网站） | https://stateofsurveillance.org/news/emudhra-eight-compromised-tls-certificates-forge-any-site-2026/
+- 2026-10-23 | Node.js 紧急安全发布 v26.12.1/v24.22.1/v22.23.4（10 CVE + 拉黑 eMudhra） | https://nodejs.org/en/blog/vulnerability/october-2026-security-releases
+- 2026-10-23 | OpenClaw 发布 v2026.10.6（硬性要求 Node 修复版运行时） | https://github.com/openclaw/openclaw/releases/tag/v2026.10.6
+- 2026-10-23 | LiteLLM 官方复盘：实例日志 token 被窃攻陷发布管线、Claude Code OAuth token 会落日志 | https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/
+- 2026-10-23 | GitHub 平台批次：CLI 过期自动刷新 OAuth token、Copilot 用量指标覆盖 skills/agents/MCP servers | https://github.blog/changelog/2026/10
+- 2026-10-23 | Anthropic Claude Platform on Google Cloud（Anthropic managed）正式 GA | https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed
+- 2026-10-23 | OpenAI 拟以约 $1.25T 估值融资 $30B（IPO 推至 2027） | https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo
+- 2026-10-23 | SpaceX 首次季度盈利、AI 分部收入首超星链（Musk 披露与 Tesla 探索合并） | https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/
