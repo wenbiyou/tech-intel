@@ -4,22 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-09 | Anthropic 给 Max/Team 订阅捆绑每月 Claude Platform API 额度 | https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans
-- 2026-10-09 | 微软 MAI-Code-1.1-Flash 端侧化（3-bit 量化/256K 上下文/本地零推理费） | https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/
-- 2026-10-09 | 开发者长测：DeepSeek 4.1 Flash 月账单 <$1 跑出 Opus 级编码（单源） | https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/
-- 2026-10-09 | 微软发布会：MXC 智能体容器管控升格 Windows 平台能力、本地模型进驻 Copilot | https://news.microsoft.com/windows-surface-october-2026-news/
-- 2026-10-09 | Anthropic 上线 Cyber Mission 与 CIDP（11 家创始伙伴）+ OSS Scanner | https://aiweekly.co/alerts/anthropic-launches-cyber-mission-with-11-founding-partners
-- 2026-10-09 | Firefox 158 公测支持 JPEG XL（Chrome 155 已默认启用，10/13 稳定版跟进） | https://www.mozilla.org/en-US/firefox/beta/notes
-- 2026-10-09 | 画师 David Revoy 许可证补充条款禁止 AI 衍生作品 | https://www.davidrevoy.com/article1178/license-update-ai-derivation-prohibited-on-all-my-art-lore-stories-and-comics
-- 2026-10-09 | GitHub 平台小幅改进：triage 角色可归档 PR、草稿 PR 计入限额等 | https://github.blog/changelog/2026/10
-- 2026-10-09 | State of AI Report 2026 发布（AI is building AI/物理 AI/推理繁荣/网络风险） | https://press.airstreet.com/p/state-of-ai-2026
-- 2026-10-13 | Meta 发布首个前沿级模型系列 Muse Wonder / Muse Wonder Full | https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/
-- 2026-10-13 | Karpathy：公众对 AI 认知断层扩大（约 75% 人口几乎未接触大模型） | https://www.businessinsider.com/andrej-karpathy-ai-gap-widening-usage-2026-10
-- 2026-10-13 | Anthropic Frontier Red Team：前沿模型或距「自我复制」能力仅数月 | https://www.anthropic.com/research/self-replicating-ai
-- 2026-10-13 | Anthropic 披露 Claude「意外越权行为」调查（上期未推） | https://www.anthropic.com/research/investigating-unintended-model-actions
-- 2026-10-13 | Firefox 158 正式版发布：JPEG XL 默认启用 | https://linuxiac.com/firefox-158-adds-jpeg-xl-support-improves-pdf-handling-on-linux/
-- 2026-10-13 | 微软公布 Maia 300、确认 Maia 200 量产并扩至多吉瓦级 | https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/
-- 2026-10-13 | NVIDIA×Cisco 发布 AI 工厂可插拔光学新形态 | https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories
 - 2026-10-14 | Google Gemini 4 Argon 全球正式开放 | https://sea.mashable.com/tech/55849/google-releases-gemini-4-argon-its-new-frontier-model-benchmarks-how-to-try-it-and-pricing
 - 2026-10-14 | Gemini 4 Argon 正式进驻 GitHub Copilot | https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot
 - 2026-10-14 | Meta 披露 GitHub 仓库遭凭据入侵：约 1500 人代码与个人信息外泄 | https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/
@@ -77,3 +61,11 @@
 - 2026-10-23 | Anthropic Claude Platform on Google Cloud（Anthropic managed）正式 GA | https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed
 - 2026-10-23 | OpenAI 拟以约 $1.25T 估值融资 $30B（IPO 推至 2027） | https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo
 - 2026-10-23 | SpaceX 首次季度盈利、AI 分部收入首超星链（Musk 披露与 Tesla 探索合并） | https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/
+- 2026-10-28 | OpenAI 发布 GPT-6.1 Terra（半价中档智能体模型、全渠道铺开） | https://decrypt.co/381883/openai-launches-gpt-6-1-terra-half-good-half-price
+- 2026-10-28 | Moonshot Kimi K3.1 Pro 上线（3T 级开源模型、权重 11/4 前释出、削减网络攻击数据） | https://www.reuters.com/technology/moonshot-curbs-hacking-ability-new-kimi-model-fears-grow-over-ai-powered-2026-10-24
+- 2026-10-28 | GitHub Copilot assisted permissions 正式 GA | https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available
+- 2026-10-28 | OpenClaw 稳定线 v2026.10.7/10.8 与 beta.4（eMudhra 修复/hooks.token 加固） | https://github.com/openclaw/openclaw/releases/tag/v2026.10.8
+- 2026-10-28 | Claude 聊天+Cowork 合一进入 Enterprise 正式版 | https://claude.com/resources/articles/unified-claude-enterprise
+- 2026-10-28 | Firefox 159 发布（Wayland/AMD GPU 修复 + MFSA 2026-118 同源策略绕过） | https://linuxiac.com/mozilla-firefox-159-improves-linux-wayland-support-adds-new-tab-search/
+- 2026-10-28 | Node.js 26 转 Active LTS、发布模型自 27 起改革 | https://nodesource.com/blog/nodejs-release-schedule-is-changing
+- 2026-10-28 | Anthropic 公开递交 S-1（Nasdaq「ANT」、上半年收入 $16.3B） | https://www.anthropic.com/news/s1-sec
