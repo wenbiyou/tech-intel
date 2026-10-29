@@ -4,16 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-14 | Google Gemini 4 Argon 全球正式开放 | https://sea.mashable.com/tech/55849/google-releases-gemini-4-argon-its-new-frontier-model-benchmarks-how-to-try-it-and-pricing
-- 2026-10-14 | Gemini 4 Argon 正式进驻 GitHub Copilot | https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot
-- 2026-10-14 | Meta 披露 GitHub 仓库遭凭据入侵：约 1500 人代码与个人信息外泄 | https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/
-- 2026-10-14 | GitHub Copilot 企业托管设置可强制启动刷新、沙箱键加最低客户端版本 | https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates
-- 2026-10-14 | GitHub Apps 最小权限与管理改进 | https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management
-- 2026-10-14 | AI 智能体安全监控初创 Pluto 出 stealth（总融资 $42M） | https://aiweekly.co/alerts/pluto-security-exits-stealth-with-42m-to-monitor-enterprise-ai-agents-and-vibe
-- 2026-10-14 | Anthropic 自研 VCS「Scion」替代 Git（工程复盘） | https://www.anthropic.com/engineering/redesigning-source-control
-- 2026-10-14 | Gemma Transcribe：EmbeddingGemma 2 改造的 Mac 端语音转写（288 倍实时） | https://eg2.haku.sh/
-- 2026-10-14 | Decagon 聘投行并与 ServiceNow 进行早期收购谈判（$4.5B） | https://aiweekly.co/alerts/ai-customer-service-startup-decagon-hires-bank-holds-early-buyout-talks-with
-- 2026-10-14 | Scaleway 宣布欧洲首个商用 AMD MI355X AI 超算（瑞典） | https://www.finimize.com/content/scaleway-takes-its-first-ai-supercomputer-outside-france
 - 2026-10-15 | xAI 发布 Grok Voice 3.0 语音模型 | https://x.ai/news/grok-voice-3
 - 2026-10-15 | XBOW：AI 智能体用 GPT-5.6 六天造出 Chrome 全链漏洞利用获 $25 万赏金 | https://cyberinsider.com/google-pays-250k-bounty-for-ai-assisted-chrome-exploit-built-in-six-days/
 - 2026-10-15 | Swarmchasers 智能体舰队经腾讯云探测高德地图 | https://gbhackers.com/tencent-cloud-linked-ai-agent-fleet/
@@ -69,3 +59,13 @@
 - 2026-10-28 | Firefox 159 发布（Wayland/AMD GPU 修复 + MFSA 2026-118 同源策略绕过） | https://linuxiac.com/mozilla-firefox-159-improves-linux-wayland-support-adds-new-tab-search/
 - 2026-10-28 | Node.js 26 转 Active LTS、发布模型自 27 起改革 | https://nodesource.com/blog/nodejs-release-schedule-is-changing
 - 2026-10-28 | Anthropic 公开递交 S-1（Nasdaq「ANT」、上半年收入 $16.3B） | https://www.anthropic.com/news/s1-sec
+- 2026-10-29 | Google DeepMind 发布 Genie 4 世界模型 | https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+- 2026-10-29 | 蚂蚁百灵 Ling-3.1-flash-1019 开放权重 | https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
+- 2026-10-29 | GitHub Copilot Fusion 正式 GA | https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion
+- 2026-10-29 | GitHub Agentic Workflows GA、Agent Merge 云端盯防 PR | https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available
+- 2026-10-29 | Cloudflare 披露 Workers AI（GLM-5.3）跨客户数据暴露 | https://blog.cloudflare.com/kv-cache-exposure-remediation/
+- 2026-10-29 | GitHub Universe 2026：Copilot app/Projects/Enterprise 解绑订阅 | https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/
+- 2026-10-29 | VS Code Agent Host 与开放协议 AHP | https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/
+- 2026-10-29 | OpenAI 拟直接采购 Google TPU | https://www.reuters.com/business/openai-plans-buy-googles-ai-chips-information-reports-2026-10-28/
+- 2026-10-29 | Anthropic 扩容 GSA 协议至州与地方政府 | https://www.anthropic.com/news/expanding-partnership-gsa
+- 2026-10-29 | Anthropic 向加州建言法院应有权叫停高风险 AI 模型 | https://www.reuters.com/legal/government/anthropic-tells-california-governor-courts-should-be-able-block-risky-ai-models-2026-10-28
