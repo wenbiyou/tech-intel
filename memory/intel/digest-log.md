@@ -4,18 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-15 | xAI 发布 Grok Voice 3.0 语音模型 | https://x.ai/news/grok-voice-3
-- 2026-10-15 | XBOW：AI 智能体用 GPT-5.6 六天造出 Chrome 全链漏洞利用获 $25 万赏金 | https://cyberinsider.com/google-pays-250k-bounty-for-ai-assisted-chrome-exploit-built-in-six-days/
-- 2026-10-15 | Swarmchasers 智能体舰队经腾讯云探测高德地图 | https://gbhackers.com/tencent-cloud-linked-ai-agent-fleet/
-- 2026-10-15 | Reuters：Anthropic/OpenAI 寻求对外部评测报告的编辑控制权 | https://www.centredaily.com/news/business/article317599978.html
-- 2026-10-15 | GitHub Actions workflow lockfiles 公开预览 | https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/
-- 2026-10-15 | GitHub Secret scanning 默认拦截 Anthropic API key | https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce/
-- 2026-10-15 | HydraFusion 编排更新并新增 Max 档 | https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/
-- 2026-10-15 | ViteConf 2026 今日线上举行 | https://viteconf.org/
-- 2026-10-15 | Mononoke 作者指 Anthropic Scion 借鉴未署名 | https://sunshowers.io/posts/anthropic-mononoke/
-- 2026-10-15 | 欧盟 AI Office 对 OpenAI/Anthropic 启动 AI Act 首批调查 | https://aiweekly.co/alerts/eu-ai-office-opens-first-ai-act-probes-into-openai-anthropic
-- 2026-10-15 | Anthropic 向机构投资者预路演 $1.8-2T IPO | https://finance.yahoo.com/technology/ai/articles/two-exit-doors-anthropic-2-051103937.html
-- 2026-10-15 | AI 基建金融双警报：Goolsbee 过热警告与 CoreWeave 债券收益率 15% | https://aiweekly.co/alerts/feds-goolsbee-warns-ai-data-center-buildout-may-be-overheating-us-economy-as
 - 2026-10-16 | Meta 开放 Muse Spark Open 权重（816B/42B，两台 M5 Ultra Mac Studio 可跑） | https://research.meta.ai/blog/muse-spark-open
 - 2026-10-16 | NVIDIA 开放 Nemotron 3.5 Super VL 权重（120B/12B，1M 上下文） | https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning
 - 2026-10-16 | FTC 向 OpenAI/Anthropic 发出民事传票（各超 50 页、拟强制高管作证） | https://www.cbsnews.com/news/ftc-subpoenas-anthropic-openai-consumer-protection/
@@ -69,3 +57,11 @@
 - 2026-10-29 | OpenAI 拟直接采购 Google TPU | https://www.reuters.com/business/openai-plans-buy-googles-ai-chips-information-reports-2026-10-28/
 - 2026-10-29 | Anthropic 扩容 GSA 协议至州与地方政府 | https://www.anthropic.com/news/expanding-partnership-gsa
 - 2026-10-29 | Anthropic 向加州建言法院应有权叫停高风险 AI 模型 | https://www.reuters.com/legal/government/anthropic-tells-california-governor-courts-should-be-able-block-risky-ai-models-2026-10-28
+- 2026-10-30 | Google 发布 Gemini 4 Carbon | https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon
+- 2026-10-30 | The Information：DeepSeek 与月之暗面蒸馏 GPT-6 Astra 训练新模型 | https://indianexpress.com/article/technology/artificial-intelligence/deepseek-moonshot-used-openais-gpt-6-astra-to-train-latest-models-report-10941782/
+- 2026-10-30 | Liquid AI 发布 LFM3 开放权重家族 | https://www.liquid.ai/blog/lfm3
+- 2026-10-30 | Warp 披露数据泄露：AI 智能体日志与遥测或受影响 | https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/
+- 2026-10-30 | OpenClaw 发布 v2026.10.9 安全维护批次 | https://github.com/openclaw/openclaw/releases/tag/v2026.10.9
+- 2026-10-30 | GitHub Copilot SDK 更名 Microsoft Copilot SDK | https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk
+- 2026-10-30 | 微软与 Alphabet 同日发布 Q3 财报：AI capex 叙事分化 | https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html
+- 2026-10-30 | Amazon Q3：AI 支出再上调 | https://www.businessinsider.com/amazon-2027-ai-spending-exceed-220-billion-2026-10
