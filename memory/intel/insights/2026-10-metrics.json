@@ -1,0 +1,14 @@
+{
+  "month": "2026-10",
+  "actTotal": 50,
+  "actConverted": 7,
+  "unverified": 43,
+  "weightSuggestions": 2,
+  "chain": {
+    "topics": 3,
+    "assets": 3,
+    "cited": 0
+  },
+  "chainNote": "转化 7/50=14%：4 条 OpenClaw 版本 + Node 26.12.1 + eMudhra 均由 10-05/10-23 两次真实升级动作吸收（证据 upgrade-2026.10.6-baseline.md），HydraFusion 为 §21.9 引用型；weekly-sync 自 W42 断供、W41 从未消费（10-11 夜学桥件缺产零开题），10-13 后 29 条 act 无周同步映射层，瓶颈在供给链；学习链 W39/W40 两期消费产出 3 主题 3 资产（mcp-knowledge 增量节、coding-agent-extension 增量节、multi-agent-orchestration §21.9），§21.9 执行窗口到期未跑、知识节无后续任务引用，被引用 0；Scion/DeepInfer 经每日池通道另有学习消费（anthropic-knowledge 附录5）不计入 weekly-sync 链条口径",
+  "updatedAt": "2026-11-01T08:41:53+08:00"
+}
