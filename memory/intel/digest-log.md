@@ -4,13 +4,6 @@
 > 条目格式：`- YYYY-MM-DD | 标题 | 链接`
 > 维护纪律：每次推送后追加当日条目；追加时修剪 14 天前的索引行（只删本文件行，不动 daily/ 月度归档）。
 
-- 2026-10-16 | Meta 开放 Muse Spark Open 权重（816B/42B，两台 M5 Ultra Mac Studio 可跑） | https://research.meta.ai/blog/muse-spark-open
-- 2026-10-16 | NVIDIA 开放 Nemotron 3.5 Super VL 权重（120B/12B，1M 上下文） | https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning
-- 2026-10-16 | FTC 向 OpenAI/Anthropic 发出民事传票（各超 50 页、拟强制高管作证） | https://www.cbsnews.com/news/ftc-subpoenas-anthropic-openai-consumer-protection/
-- 2026-10-16 | Anthropic 给 METR 员工级访问（嵌入式独立评估落地） | https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/
-- 2026-10-16 | Perplexity 公开 SPACE 沙箱攻防评测（VM 逃逸全失败、egress 是薄弱面） | https://www.perplexity.ai/en-GB/hub/blog/escaping-space-part-i
-- 2026-10-16 | ViteConf 2026：Evan You 宣布 Void 部署平台（Vite 原生、AI-native） | https://void.cloud/
-- 2026-10-16 | Anthropic 早期投资人预测 IPO 后估值最高 $2.4T | https://fortune.com/2026/10/15/anthropic-investor-ipo-financials
 - 2026-10-21 | DeepSeek 开源 DeepInfer 推理框架与 deepseek-recipe | https://www.ithome.com/1/015/429.htm
 - 2026-10-21 | Chrome 156 稳定版发布（模块失败可重试/IndexedDB SQLite 后端） | https://chromestatus.com/release-notes/156
 - 2026-10-21 | GitHub Package Firewall 公开预览（npm 供应链防火墙） | https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/
@@ -65,3 +58,13 @@
 - 2026-10-30 | GitHub Copilot SDK 更名 Microsoft Copilot SDK | https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk
 - 2026-10-30 | 微软与 Alphabet 同日发布 Q3 财报：AI capex 叙事分化 | https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html
 - 2026-10-30 | Amazon Q3：AI 支出再上调 | https://www.businessinsider.com/amazon-2027-ai-spending-exceed-220-billion-2026-10
+- 2026-11-02 | Kimi K2 系列停止新用户开通（12 月底全线下线） | https://platform.kimi.ai/docs/models
+- 2026-11-02 | OpenAI 上线 GPT-Rosalind-6 Research 生物可信访问通道 | https://deploymentsafety.openai.com/gpt-rosalind-6/safeguards
+- 2026-11-02 | Wiz《Black October》：AI 开发平台遭遇凭据劫持浪潮 | https://www.wiz.io/blog/black-october-for-ai-developer-platforms
+- 2026-11-02 | Northflank 泄露：环境变量视为已解密、AI API key 被盗用 | https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys
+- 2026-11-02 | Chainalysis 披露遭 offensive agentic techniques 入侵 | https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/
+- 2026-11-02 | Anthropic 自动化红队：Claude 智能体写出骗过监控器的训练数据 | https://alignment.anthropic.com/2026/automated-em-search/
+- 2026-11-02 | Next.js 11 月安全版本定档 11/3（7 个中危漏洞） | https://nextjs.org/blog/upcoming-nextjs-security-release-november-2026
+- 2026-11-02 | OpenClaw 发布 2026.10.10-beta.5 | https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5
+- 2026-11-02 | OpenAI 融资目标砍至 $20B、已落定约 $11B | https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round
+- 2026-11-02 | 阿里 Qwen 进入中国版 Apple Intelligence | https://english.news.cn/20261031/0642ddf499b643b1b8babd0b43adee85/c.html
